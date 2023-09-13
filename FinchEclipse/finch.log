@@ -1,0 +1,887 @@
+2023-09-08 10:41:47,783 [main] DEBUG: edu.cmu.ri.createlab.terk.application.TerkApplication: TerkApplication.TerkApplication()
+2023-09-08 10:41:47,785 [main] INFO : edu.cmu.ri.createlab.terk.application.TerkApplication: TerkApplication.TerkApplication(): System property [terk-application.connection-strategy.class.name] is not defined.  Attempting to use default [edu.cmu.ri.createlab.terk.robot.finch.LocalFinchConnectionStrategy] implementation class instead.
+2023-09-08 10:41:47,792 [main] DEBUG: edu.cmu.ri.createlab.terk.application.TerkApplication: TerkApplication.TerkApplication(): successfully instantiated ConnectionStrategy implementation class [edu.cmu.ri.createlab.terk.robot.finch.LocalFinchConnectionStrategy]
+2023-09-08 10:41:47,946 [main] DEBUG: edu.cmu.ri.createlab.device.connectivity.BaseCreateLabDeviceConnectivityManager: BaseCreateLabDeviceConnectivityManager: scanAndConnectWorkhorseRunnable.run()
+2023-09-08 10:41:47,946 [main] DEBUG: edu.cmu.ri.createlab.device.connectivity.BaseCreateLabDeviceConnectivityManager: BaseCreateLabDeviceConnectivityManager.disconnect()
+2023-09-08 10:41:47,946 [main] DEBUG: edu.cmu.ri.createlab.terk.robot.finch.LocalFinchConnectionStrategy: LocalFinchConnectionStrategy.handleConnectionStateChange(): OLD [Disconnected]  NEW [Disconnected]  port []
+2023-09-08 10:41:47,948 [BaseCreateLabDeviceConnectivityManager.executorService pool-1-thread-1] DEBUG: edu.cmu.ri.createlab.device.connectivity.BaseCreateLabDeviceConnectivityManager: CreateLabDeviceConnectivityManagerImpl$DeviceScanner.run()
+2023-09-08 10:41:47,948 [BaseCreateLabDeviceConnectivityManager.executorService pool-1-thread-1] DEBUG: edu.cmu.ri.createlab.terk.robot.finch.LocalFinchConnectionStrategy: LocalFinchConnectionStrategy.handleConnectionStateChange(): OLD [Disconnected]  NEW [Scanning]  port []
+2023-09-08 10:41:47,953 [BaseCreateLabDeviceConnectivityManager.executorService pool-1-thread-1] DEBUG: edu.cmu.ri.createlab.terk.robot.finch.DefaultFinchController: DefaultFinchController.create(): creating HID device for vendor ID [2354] and product ID [1111]
+2023-09-08 10:41:47,957 [BaseCreateLabDeviceConnectivityManager.executorService pool-1-thread-1] DEBUG: edu.cmu.ri.createlab.terk.robot.finch.DefaultFinchController: DefaultFinchController.create(): attempting connection...
+2023-09-08 10:41:48,212 [BaseCreateLabDeviceConnectivityManager.executorService pool-1-thread-1] DEBUG: edu.cmu.ri.createlab.usb.hid.windows.WindowsHIDDevice: WindowsHIDDevice.disconnect(): disconnected successfully
+2023-09-08 10:41:48,220 [BaseCreateLabDeviceConnectivityManager.executorService pool-1-thread-1] DEBUG: edu.cmu.ri.createlab.usb.hid.windows.WindowsHIDDevice: WindowsHIDDevice.connect(): connection successful
+2023-09-08 10:41:48,234 [BaseCreateLabDeviceConnectivityManager.executorService pool-1-thread-1] DEBUG: edu.cmu.ri.createlab.device.connectivity.BaseCreateLabDeviceConnectivityManager: CreateLabDeviceConnectivityManagerImpl$DeviceScanner.run(): connection established!
+2023-09-08 10:41:48,234 [BaseCreateLabDeviceConnectivityManager.executorService pool-1-thread-1] DEBUG: edu.cmu.ri.createlab.terk.robot.finch.LocalFinchConnectionStrategy: LocalFinchConnectionStrategy.handleConnectionStateChange(): OLD [Scanning]  NEW [Connected]  port [\\?\hid#vid_2354&pid_1111#6&3752f9b6&0&0000#{4d1e55b2-f16f-11cf-88cb-001111000030}]
+2023-09-08 10:41:48,239 [main] DEBUG: edu.cmu.ri.createlab.terk.robot.finch.services.FinchServiceManager: FinchServiceManager.loadService() needs to load the [::TeRK::buzzer::BuzzerService] service
+2023-09-08 10:41:48,239 [main] DEBUG: edu.cmu.ri.createlab.terk.robot.finch.services.FinchServiceFactory: FinchServiceFactory.createService(::TeRK::buzzer::BuzzerService)
+2023-09-08 10:41:48,242 [main] DEBUG: edu.cmu.ri.createlab.terk.properties.BasicPropertyManager: ServantPropertyManager.setReadOnlyProperty(device.count,1)
+2023-09-08 10:41:48,242 [main] DEBUG: edu.cmu.ri.createlab.terk.properties.BasicPropertyManager: ServantPropertyManager.setReadOnlyProperty(::TeRK::buzzer::BuzzerService::min-duration,0)
+2023-09-08 10:41:48,242 [main] DEBUG: edu.cmu.ri.createlab.terk.properties.BasicPropertyManager: ServantPropertyManager.setReadOnlyProperty(::TeRK::buzzer::BuzzerService::max-duration,65535)
+2023-09-08 10:41:48,242 [main] DEBUG: edu.cmu.ri.createlab.terk.properties.BasicPropertyManager: ServantPropertyManager.setReadOnlyProperty(::TeRK::buzzer::BuzzerService::min-frequency,0)
+2023-09-08 10:41:48,242 [main] DEBUG: edu.cmu.ri.createlab.terk.properties.BasicPropertyManager: ServantPropertyManager.setReadOnlyProperty(::TeRK::buzzer::BuzzerService::max-frequency,65535)
+2023-09-08 10:41:48,249 [main] DEBUG: edu.cmu.ri.createlab.terk.application.TerkApplication: TerkApplication.shutdown()
+2023-09-08 10:41:48,249 [main] DEBUG: edu.cmu.ri.createlab.terk.application.TerkApplication: TerkApplication$shutdownRunnable.run()
+2023-09-08 10:41:48,249 [main] DEBUG: edu.cmu.ri.createlab.terk.robot.finch.LocalFinchConnectionStrategy: LocalFinchConnectionStrategy.prepareForShutdown()
+2023-09-08 10:41:48,249 [main] DEBUG: edu.cmu.ri.createlab.terk.robot.finch.LocalFinchConnectionStrategy: LocalFinchConnectionStrategy.disconnect()
+2023-09-08 10:41:48,249 [main] DEBUG: edu.cmu.ri.createlab.device.connectivity.BaseCreateLabDeviceConnectivityManager: BaseCreateLabDeviceConnectivityManager.disconnect()
+2023-09-08 10:41:48,249 [main] DEBUG: edu.cmu.ri.createlab.terk.robot.finch.DefaultFinchController: DefaultFinchController.disconnect(): Shutting down finch pinger...
+2023-09-08 10:41:48,250 [main] DEBUG: edu.cmu.ri.createlab.terk.robot.finch.DefaultFinchController: DefaultFinchController.disconnect(): Successfully shut down finch pinger.
+2023-09-08 10:41:48,250 [main] DEBUG: edu.cmu.ri.createlab.terk.robot.finch.DefaultFinchController: DefaultFinchController.disconnect(): Now attempting to send the disconnect command to the finch
+2023-09-08 10:41:48,257 [main] DEBUG: edu.cmu.ri.createlab.terk.robot.finch.DefaultFinchController: DefaultFinchController.disconnect(): Successfully disconnected from the finch.
+2023-09-08 10:41:48,257 [main] DEBUG: edu.cmu.ri.createlab.terk.robot.finch.DefaultFinchController: DefaultFinchController.disconnect(): Now shutting down the HIDCommandExecutionQueue...
+2023-09-08 10:41:48,257 [main] DEBUG: edu.cmu.ri.createlab.usb.hid.HIDCommandExecutionQueue: HIDCommandExecutionQueue.shutdown(): Shutting down the HID device command execution queue
+2023-09-08 10:41:48,257 [main] DEBUG: edu.cmu.ri.createlab.usb.hid.HIDCommandExecutionQueue: HIDCommandExecutionQueue.shutdown(): Unexecuted tasks: 0
+2023-09-08 10:41:48,257 [main] DEBUG: edu.cmu.ri.createlab.usb.hid.HIDCommandExecutionQueue: HIDCommandExecutionQueue.shutdown(): Waiting for the HID device command execution queue to shutdown.
+2023-09-08 10:41:48,257 [main] DEBUG: edu.cmu.ri.createlab.usb.hid.HIDCommandExecutionQueue: HIDCommandExecutionQueue.shutdown(): HID device command execution queue successfully shutdown
+2023-09-08 10:41:48,257 [main] DEBUG: edu.cmu.ri.createlab.usb.hid.HIDCommandExecutionQueue: HIDCommandExecutionQueue.shutdown(): Now attempting to disconnect from the HID device...
+2023-09-08 10:41:48,258 [main] DEBUG: edu.cmu.ri.createlab.usb.hid.windows.WindowsHIDDevice: WindowsHIDDevice.disconnect(): disconnected successfully
+2023-09-08 10:41:48,258 [main] DEBUG: edu.cmu.ri.createlab.usb.hid.HIDCommandExecutionQueue: HIDCommandExecutionQueue.shutdown(): HID device disconnected successfully.
+2023-09-08 10:41:48,258 [main] DEBUG: edu.cmu.ri.createlab.terk.robot.finch.LocalFinchConnectionStrategy: LocalFinchConnectionStrategy.handleConnectionStateChange(): OLD [Connected]  NEW [Disconnected]  port []
+2023-09-08 10:42:10,098 [main] DEBUG: edu.cmu.ri.createlab.terk.application.TerkApplication: TerkApplication.TerkApplication()
+2023-09-08 10:42:10,099 [main] INFO : edu.cmu.ri.createlab.terk.application.TerkApplication: TerkApplication.TerkApplication(): System property [terk-application.connection-strategy.class.name] is not defined.  Attempting to use default [edu.cmu.ri.createlab.terk.robot.finch.LocalFinchConnectionStrategy] implementation class instead.
+2023-09-08 10:42:10,106 [main] DEBUG: edu.cmu.ri.createlab.terk.application.TerkApplication: TerkApplication.TerkApplication(): successfully instantiated ConnectionStrategy implementation class [edu.cmu.ri.createlab.terk.robot.finch.LocalFinchConnectionStrategy]
+2023-09-08 10:42:10,257 [main] DEBUG: edu.cmu.ri.createlab.device.connectivity.BaseCreateLabDeviceConnectivityManager: BaseCreateLabDeviceConnectivityManager: scanAndConnectWorkhorseRunnable.run()
+2023-09-08 10:42:10,257 [main] DEBUG: edu.cmu.ri.createlab.device.connectivity.BaseCreateLabDeviceConnectivityManager: BaseCreateLabDeviceConnectivityManager.disconnect()
+2023-09-08 10:42:10,257 [main] DEBUG: edu.cmu.ri.createlab.terk.robot.finch.LocalFinchConnectionStrategy: LocalFinchConnectionStrategy.handleConnectionStateChange(): OLD [Disconnected]  NEW [Disconnected]  port []
+2023-09-08 10:42:10,258 [BaseCreateLabDeviceConnectivityManager.executorService pool-1-thread-1] DEBUG: edu.cmu.ri.createlab.device.connectivity.BaseCreateLabDeviceConnectivityManager: CreateLabDeviceConnectivityManagerImpl$DeviceScanner.run()
+2023-09-08 10:42:10,258 [BaseCreateLabDeviceConnectivityManager.executorService pool-1-thread-1] DEBUG: edu.cmu.ri.createlab.terk.robot.finch.LocalFinchConnectionStrategy: LocalFinchConnectionStrategy.handleConnectionStateChange(): OLD [Disconnected]  NEW [Scanning]  port []
+2023-09-08 10:42:10,261 [BaseCreateLabDeviceConnectivityManager.executorService pool-1-thread-1] DEBUG: edu.cmu.ri.createlab.terk.robot.finch.DefaultFinchController: DefaultFinchController.create(): creating HID device for vendor ID [2354] and product ID [1111]
+2023-09-08 10:42:10,266 [BaseCreateLabDeviceConnectivityManager.executorService pool-1-thread-1] DEBUG: edu.cmu.ri.createlab.terk.robot.finch.DefaultFinchController: DefaultFinchController.create(): attempting connection...
+2023-09-08 10:42:10,535 [BaseCreateLabDeviceConnectivityManager.executorService pool-1-thread-1] DEBUG: edu.cmu.ri.createlab.usb.hid.windows.WindowsHIDDevice: WindowsHIDDevice.disconnect(): disconnected successfully
+2023-09-08 10:42:10,543 [BaseCreateLabDeviceConnectivityManager.executorService pool-1-thread-1] DEBUG: edu.cmu.ri.createlab.usb.hid.windows.WindowsHIDDevice: WindowsHIDDevice.connect(): connection successful
+2023-09-08 10:42:10,555 [BaseCreateLabDeviceConnectivityManager.executorService pool-1-thread-1] DEBUG: edu.cmu.ri.createlab.device.connectivity.BaseCreateLabDeviceConnectivityManager: CreateLabDeviceConnectivityManagerImpl$DeviceScanner.run(): connection established!
+2023-09-08 10:42:10,555 [BaseCreateLabDeviceConnectivityManager.executorService pool-1-thread-1] DEBUG: edu.cmu.ri.createlab.terk.robot.finch.LocalFinchConnectionStrategy: LocalFinchConnectionStrategy.handleConnectionStateChange(): OLD [Scanning]  NEW [Connected]  port [\\?\hid#vid_2354&pid_1111#6&3752f9b6&0&0000#{4d1e55b2-f16f-11cf-88cb-001111000030}]
+2023-09-08 10:42:10,559 [main] DEBUG: edu.cmu.ri.createlab.terk.robot.finch.services.FinchServiceManager: FinchServiceManager.loadService() needs to load the [::TeRK::buzzer::BuzzerService] service
+2023-09-08 10:42:10,559 [main] DEBUG: edu.cmu.ri.createlab.terk.robot.finch.services.FinchServiceFactory: FinchServiceFactory.createService(::TeRK::buzzer::BuzzerService)
+2023-09-08 10:42:10,561 [main] DEBUG: edu.cmu.ri.createlab.terk.properties.BasicPropertyManager: ServantPropertyManager.setReadOnlyProperty(device.count,1)
+2023-09-08 10:42:10,561 [main] DEBUG: edu.cmu.ri.createlab.terk.properties.BasicPropertyManager: ServantPropertyManager.setReadOnlyProperty(::TeRK::buzzer::BuzzerService::min-duration,0)
+2023-09-08 10:42:10,561 [main] DEBUG: edu.cmu.ri.createlab.terk.properties.BasicPropertyManager: ServantPropertyManager.setReadOnlyProperty(::TeRK::buzzer::BuzzerService::max-duration,65535)
+2023-09-08 10:42:10,561 [main] DEBUG: edu.cmu.ri.createlab.terk.properties.BasicPropertyManager: ServantPropertyManager.setReadOnlyProperty(::TeRK::buzzer::BuzzerService::min-frequency,0)
+2023-09-08 10:42:10,561 [main] DEBUG: edu.cmu.ri.createlab.terk.properties.BasicPropertyManager: ServantPropertyManager.setReadOnlyProperty(::TeRK::buzzer::BuzzerService::max-frequency,65535)
+2023-09-08 10:42:10,570 [main] DEBUG: edu.cmu.ri.createlab.terk.application.TerkApplication: TerkApplication.shutdown()
+2023-09-08 10:42:10,570 [main] DEBUG: edu.cmu.ri.createlab.terk.application.TerkApplication: TerkApplication$shutdownRunnable.run()
+2023-09-08 10:42:10,571 [main] DEBUG: edu.cmu.ri.createlab.terk.robot.finch.LocalFinchConnectionStrategy: LocalFinchConnectionStrategy.prepareForShutdown()
+2023-09-08 10:42:10,571 [main] DEBUG: edu.cmu.ri.createlab.terk.robot.finch.LocalFinchConnectionStrategy: LocalFinchConnectionStrategy.disconnect()
+2023-09-08 10:42:10,571 [main] DEBUG: edu.cmu.ri.createlab.device.connectivity.BaseCreateLabDeviceConnectivityManager: BaseCreateLabDeviceConnectivityManager.disconnect()
+2023-09-08 10:42:10,571 [main] DEBUG: edu.cmu.ri.createlab.terk.robot.finch.DefaultFinchController: DefaultFinchController.disconnect(): Shutting down finch pinger...
+2023-09-08 10:42:10,571 [main] DEBUG: edu.cmu.ri.createlab.terk.robot.finch.DefaultFinchController: DefaultFinchController.disconnect(): Successfully shut down finch pinger.
+2023-09-08 10:42:10,571 [main] DEBUG: edu.cmu.ri.createlab.terk.robot.finch.DefaultFinchController: DefaultFinchController.disconnect(): Now attempting to send the disconnect command to the finch
+2023-09-08 10:42:10,578 [main] DEBUG: edu.cmu.ri.createlab.terk.robot.finch.DefaultFinchController: DefaultFinchController.disconnect(): Successfully disconnected from the finch.
+2023-09-08 10:42:10,578 [main] DEBUG: edu.cmu.ri.createlab.terk.robot.finch.DefaultFinchController: DefaultFinchController.disconnect(): Now shutting down the HIDCommandExecutionQueue...
+2023-09-08 10:42:10,578 [main] DEBUG: edu.cmu.ri.createlab.usb.hid.HIDCommandExecutionQueue: HIDCommandExecutionQueue.shutdown(): Shutting down the HID device command execution queue
+2023-09-08 10:42:10,578 [main] DEBUG: edu.cmu.ri.createlab.usb.hid.HIDCommandExecutionQueue: HIDCommandExecutionQueue.shutdown(): Unexecuted tasks: 0
+2023-09-08 10:42:10,578 [main] DEBUG: edu.cmu.ri.createlab.usb.hid.HIDCommandExecutionQueue: HIDCommandExecutionQueue.shutdown(): Waiting for the HID device command execution queue to shutdown.
+2023-09-08 10:42:10,578 [main] DEBUG: edu.cmu.ri.createlab.usb.hid.HIDCommandExecutionQueue: HIDCommandExecutionQueue.shutdown(): HID device command execution queue successfully shutdown
+2023-09-08 10:42:10,579 [main] DEBUG: edu.cmu.ri.createlab.usb.hid.HIDCommandExecutionQueue: HIDCommandExecutionQueue.shutdown(): Now attempting to disconnect from the HID device...
+2023-09-08 10:42:10,579 [main] DEBUG: edu.cmu.ri.createlab.usb.hid.windows.WindowsHIDDevice: WindowsHIDDevice.disconnect(): disconnected successfully
+2023-09-08 10:42:10,579 [main] DEBUG: edu.cmu.ri.createlab.usb.hid.HIDCommandExecutionQueue: HIDCommandExecutionQueue.shutdown(): HID device disconnected successfully.
+2023-09-08 10:42:10,579 [main] DEBUG: edu.cmu.ri.createlab.terk.robot.finch.LocalFinchConnectionStrategy: LocalFinchConnectionStrategy.handleConnectionStateChange(): OLD [Connected]  NEW [Disconnected]  port []
+2023-09-08 10:43:16,984 [main] DEBUG: edu.cmu.ri.createlab.terk.application.TerkApplication: TerkApplication.TerkApplication()
+2023-09-08 10:43:16,985 [main] INFO : edu.cmu.ri.createlab.terk.application.TerkApplication: TerkApplication.TerkApplication(): System property [terk-application.connection-strategy.class.name] is not defined.  Attempting to use default [edu.cmu.ri.createlab.terk.robot.finch.LocalFinchConnectionStrategy] implementation class instead.
+2023-09-08 10:43:16,991 [main] DEBUG: edu.cmu.ri.createlab.terk.application.TerkApplication: TerkApplication.TerkApplication(): successfully instantiated ConnectionStrategy implementation class [edu.cmu.ri.createlab.terk.robot.finch.LocalFinchConnectionStrategy]
+2023-09-08 10:43:17,150 [main] DEBUG: edu.cmu.ri.createlab.device.connectivity.BaseCreateLabDeviceConnectivityManager: BaseCreateLabDeviceConnectivityManager: scanAndConnectWorkhorseRunnable.run()
+2023-09-08 10:43:17,151 [main] DEBUG: edu.cmu.ri.createlab.device.connectivity.BaseCreateLabDeviceConnectivityManager: BaseCreateLabDeviceConnectivityManager.disconnect()
+2023-09-08 10:43:17,151 [main] DEBUG: edu.cmu.ri.createlab.terk.robot.finch.LocalFinchConnectionStrategy: LocalFinchConnectionStrategy.handleConnectionStateChange(): OLD [Disconnected]  NEW [Disconnected]  port []
+2023-09-08 10:43:17,152 [BaseCreateLabDeviceConnectivityManager.executorService pool-1-thread-1] DEBUG: edu.cmu.ri.createlab.device.connectivity.BaseCreateLabDeviceConnectivityManager: CreateLabDeviceConnectivityManagerImpl$DeviceScanner.run()
+2023-09-08 10:43:17,152 [BaseCreateLabDeviceConnectivityManager.executorService pool-1-thread-1] DEBUG: edu.cmu.ri.createlab.terk.robot.finch.LocalFinchConnectionStrategy: LocalFinchConnectionStrategy.handleConnectionStateChange(): OLD [Disconnected]  NEW [Scanning]  port []
+2023-09-08 10:43:17,155 [BaseCreateLabDeviceConnectivityManager.executorService pool-1-thread-1] DEBUG: edu.cmu.ri.createlab.terk.robot.finch.DefaultFinchController: DefaultFinchController.create(): creating HID device for vendor ID [2354] and product ID [1111]
+2023-09-08 10:43:17,159 [BaseCreateLabDeviceConnectivityManager.executorService pool-1-thread-1] DEBUG: edu.cmu.ri.createlab.terk.robot.finch.DefaultFinchController: DefaultFinchController.create(): attempting connection...
+2023-09-08 10:43:17,403 [BaseCreateLabDeviceConnectivityManager.executorService pool-1-thread-1] DEBUG: edu.cmu.ri.createlab.usb.hid.windows.WindowsHIDDevice: WindowsHIDDevice.disconnect(): disconnected successfully
+2023-09-08 10:43:17,412 [BaseCreateLabDeviceConnectivityManager.executorService pool-1-thread-1] DEBUG: edu.cmu.ri.createlab.usb.hid.windows.WindowsHIDDevice: WindowsHIDDevice.connect(): connection successful
+2023-09-08 10:43:17,430 [BaseCreateLabDeviceConnectivityManager.executorService pool-1-thread-1] DEBUG: edu.cmu.ri.createlab.device.connectivity.BaseCreateLabDeviceConnectivityManager: CreateLabDeviceConnectivityManagerImpl$DeviceScanner.run(): connection established!
+2023-09-08 10:43:17,430 [BaseCreateLabDeviceConnectivityManager.executorService pool-1-thread-1] DEBUG: edu.cmu.ri.createlab.terk.robot.finch.LocalFinchConnectionStrategy: LocalFinchConnectionStrategy.handleConnectionStateChange(): OLD [Scanning]  NEW [Connected]  port [\\?\hid#vid_2354&pid_1111#6&3752f9b6&0&0000#{4d1e55b2-f16f-11cf-88cb-001111000030}]
+2023-09-08 10:43:17,435 [main] DEBUG: edu.cmu.ri.createlab.terk.robot.finch.services.FinchServiceManager: FinchServiceManager.loadService() needs to load the [::TeRK::AudioController] service
+2023-09-08 10:43:17,435 [main] DEBUG: edu.cmu.ri.createlab.terk.robot.finch.services.FinchServiceFactory: FinchServiceFactory.createService(::TeRK::AudioController)
+2023-09-08 10:43:17,437 [main] DEBUG: edu.cmu.ri.createlab.terk.properties.BasicPropertyManager: ServantPropertyManager.setReadOnlyProperty(device.count,1)
+2023-09-08 10:43:17,437 [main] DEBUG: edu.cmu.ri.createlab.terk.properties.BasicPropertyManager: ServantPropertyManager.setReadOnlyProperty(::TeRK::AudioController::min-amplitude,0)
+2023-09-08 10:43:17,438 [main] DEBUG: edu.cmu.ri.createlab.terk.properties.BasicPropertyManager: ServantPropertyManager.setReadOnlyProperty(::TeRK::AudioController::max-amplitude,10)
+2023-09-08 10:43:17,438 [main] DEBUG: edu.cmu.ri.createlab.terk.properties.BasicPropertyManager: ServantPropertyManager.setReadOnlyProperty(::TeRK::AudioController::min-duration,0)
+2023-09-08 10:43:17,438 [main] DEBUG: edu.cmu.ri.createlab.terk.properties.BasicPropertyManager: ServantPropertyManager.setReadOnlyProperty(::TeRK::AudioController::max-duration,2147483647)
+2023-09-08 10:43:17,438 [main] DEBUG: edu.cmu.ri.createlab.terk.properties.BasicPropertyManager: ServantPropertyManager.setReadOnlyProperty(::TeRK::AudioController::min-frequency,0)
+2023-09-08 10:43:17,438 [main] DEBUG: edu.cmu.ri.createlab.terk.properties.BasicPropertyManager: ServantPropertyManager.setReadOnlyProperty(::TeRK::AudioController::max-frequency,2147483647)
+2023-09-08 10:43:17,446 [main] DEBUG: edu.cmu.ri.createlab.audio.AudioHelper: AudioHelper.playTone(1000,10,5)
+2023-09-08 10:43:17,658 [main] DEBUG: edu.cmu.ri.createlab.terk.application.TerkApplication: TerkApplication.shutdown()
+2023-09-08 10:43:17,658 [main] DEBUG: edu.cmu.ri.createlab.terk.application.TerkApplication: TerkApplication$shutdownRunnable.run()
+2023-09-08 10:43:17,658 [main] DEBUG: edu.cmu.ri.createlab.terk.robot.finch.LocalFinchConnectionStrategy: LocalFinchConnectionStrategy.prepareForShutdown()
+2023-09-08 10:43:17,658 [main] DEBUG: edu.cmu.ri.createlab.terk.robot.finch.LocalFinchConnectionStrategy: LocalFinchConnectionStrategy.disconnect()
+2023-09-08 10:43:17,658 [main] DEBUG: edu.cmu.ri.createlab.device.connectivity.BaseCreateLabDeviceConnectivityManager: BaseCreateLabDeviceConnectivityManager.disconnect()
+2023-09-08 10:43:17,658 [main] DEBUG: edu.cmu.ri.createlab.terk.robot.finch.DefaultFinchController: DefaultFinchController.disconnect(): Shutting down finch pinger...
+2023-09-08 10:43:17,658 [main] DEBUG: edu.cmu.ri.createlab.terk.robot.finch.DefaultFinchController: DefaultFinchController.disconnect(): Successfully shut down finch pinger.
+2023-09-08 10:43:17,658 [main] DEBUG: edu.cmu.ri.createlab.terk.robot.finch.DefaultFinchController: DefaultFinchController.disconnect(): Now attempting to send the disconnect command to the finch
+2023-09-08 10:43:17,661 [main] DEBUG: edu.cmu.ri.createlab.terk.robot.finch.DefaultFinchController: DefaultFinchController.disconnect(): Successfully disconnected from the finch.
+2023-09-08 10:43:17,661 [main] DEBUG: edu.cmu.ri.createlab.terk.robot.finch.DefaultFinchController: DefaultFinchController.disconnect(): Now shutting down the HIDCommandExecutionQueue...
+2023-09-08 10:43:17,661 [main] DEBUG: edu.cmu.ri.createlab.usb.hid.HIDCommandExecutionQueue: HIDCommandExecutionQueue.shutdown(): Shutting down the HID device command execution queue
+2023-09-08 10:43:17,661 [main] DEBUG: edu.cmu.ri.createlab.usb.hid.HIDCommandExecutionQueue: HIDCommandExecutionQueue.shutdown(): Unexecuted tasks: 0
+2023-09-08 10:43:17,661 [main] DEBUG: edu.cmu.ri.createlab.usb.hid.HIDCommandExecutionQueue: HIDCommandExecutionQueue.shutdown(): Waiting for the HID device command execution queue to shutdown.
+2023-09-08 10:43:17,661 [main] DEBUG: edu.cmu.ri.createlab.usb.hid.HIDCommandExecutionQueue: HIDCommandExecutionQueue.shutdown(): HID device command execution queue successfully shutdown
+2023-09-08 10:43:17,661 [main] DEBUG: edu.cmu.ri.createlab.usb.hid.HIDCommandExecutionQueue: HIDCommandExecutionQueue.shutdown(): Now attempting to disconnect from the HID device...
+2023-09-08 10:43:17,661 [main] ERROR: edu.cmu.ri.createlab.usb.hid.windows.WinError: WinError.findById(): Failed to find error code [14007], returning UNKNOWN.
+2023-09-08 10:43:17,661 [main] ERROR: edu.cmu.ri.createlab.usb.hid.windows.WindowsHIDDevice: WindowsHIDDevice.disconnect(): Failed to disconnect.  Return was [true] and last error was [WinError{id=-1, name='Unknown: unknown status'}]
+2023-09-08 10:43:17,661 [main] DEBUG: edu.cmu.ri.createlab.usb.hid.HIDCommandExecutionQueue: HIDCommandExecutionQueue.shutdown(): Failed to disconnect from the HID device.
+2023-09-08 10:43:17,661 [main] DEBUG: edu.cmu.ri.createlab.terk.robot.finch.LocalFinchConnectionStrategy: LocalFinchConnectionStrategy.handleConnectionStateChange(): OLD [Connected]  NEW [Disconnected]  port []
+2023-09-08 10:48:06,528 [main] DEBUG: edu.cmu.ri.createlab.terk.application.TerkApplication: TerkApplication.TerkApplication()
+2023-09-08 10:48:06,529 [main] INFO : edu.cmu.ri.createlab.terk.application.TerkApplication: TerkApplication.TerkApplication(): System property [terk-application.connection-strategy.class.name] is not defined.  Attempting to use default [edu.cmu.ri.createlab.terk.robot.finch.LocalFinchConnectionStrategy] implementation class instead.
+2023-09-08 10:48:06,536 [main] DEBUG: edu.cmu.ri.createlab.terk.application.TerkApplication: TerkApplication.TerkApplication(): successfully instantiated ConnectionStrategy implementation class [edu.cmu.ri.createlab.terk.robot.finch.LocalFinchConnectionStrategy]
+2023-09-08 10:48:06,696 [main] DEBUG: edu.cmu.ri.createlab.device.connectivity.BaseCreateLabDeviceConnectivityManager: BaseCreateLabDeviceConnectivityManager: scanAndConnectWorkhorseRunnable.run()
+2023-09-08 10:48:06,696 [main] DEBUG: edu.cmu.ri.createlab.device.connectivity.BaseCreateLabDeviceConnectivityManager: BaseCreateLabDeviceConnectivityManager.disconnect()
+2023-09-08 10:48:06,696 [main] DEBUG: edu.cmu.ri.createlab.terk.robot.finch.LocalFinchConnectionStrategy: LocalFinchConnectionStrategy.handleConnectionStateChange(): OLD [Disconnected]  NEW [Disconnected]  port []
+2023-09-08 10:48:06,698 [BaseCreateLabDeviceConnectivityManager.executorService pool-1-thread-1] DEBUG: edu.cmu.ri.createlab.device.connectivity.BaseCreateLabDeviceConnectivityManager: CreateLabDeviceConnectivityManagerImpl$DeviceScanner.run()
+2023-09-08 10:48:06,698 [BaseCreateLabDeviceConnectivityManager.executorService pool-1-thread-1] DEBUG: edu.cmu.ri.createlab.terk.robot.finch.LocalFinchConnectionStrategy: LocalFinchConnectionStrategy.handleConnectionStateChange(): OLD [Disconnected]  NEW [Scanning]  port []
+2023-09-08 10:48:06,701 [BaseCreateLabDeviceConnectivityManager.executorService pool-1-thread-1] DEBUG: edu.cmu.ri.createlab.terk.robot.finch.DefaultFinchController: DefaultFinchController.create(): creating HID device for vendor ID [2354] and product ID [1111]
+2023-09-08 10:48:06,705 [BaseCreateLabDeviceConnectivityManager.executorService pool-1-thread-1] DEBUG: edu.cmu.ri.createlab.terk.robot.finch.DefaultFinchController: DefaultFinchController.create(): attempting connection...
+2023-09-08 10:48:06,947 [BaseCreateLabDeviceConnectivityManager.executorService pool-1-thread-1] DEBUG: edu.cmu.ri.createlab.usb.hid.windows.WindowsHIDDevice: WindowsHIDDevice.disconnect(): disconnected successfully
+2023-09-08 10:48:06,958 [BaseCreateLabDeviceConnectivityManager.executorService pool-1-thread-1] DEBUG: edu.cmu.ri.createlab.usb.hid.windows.WindowsHIDDevice: WindowsHIDDevice.connect(): connection successful
+2023-09-08 10:48:06,976 [BaseCreateLabDeviceConnectivityManager.executorService pool-1-thread-1] DEBUG: edu.cmu.ri.createlab.device.connectivity.BaseCreateLabDeviceConnectivityManager: CreateLabDeviceConnectivityManagerImpl$DeviceScanner.run(): connection established!
+2023-09-08 10:48:06,977 [BaseCreateLabDeviceConnectivityManager.executorService pool-1-thread-1] DEBUG: edu.cmu.ri.createlab.terk.robot.finch.LocalFinchConnectionStrategy: LocalFinchConnectionStrategy.handleConnectionStateChange(): OLD [Scanning]  NEW [Connected]  port [\\?\hid#vid_2354&pid_1111#6&3752f9b6&0&0000#{4d1e55b2-f16f-11cf-88cb-001111000030}]
+2023-09-08 10:48:06,982 [main] DEBUG: edu.cmu.ri.createlab.terk.robot.finch.services.FinchServiceManager: FinchServiceManager.loadService() needs to load the [::TeRK::AudioController] service
+2023-09-08 10:48:06,982 [main] DEBUG: edu.cmu.ri.createlab.terk.robot.finch.services.FinchServiceFactory: FinchServiceFactory.createService(::TeRK::AudioController)
+2023-09-08 10:48:06,984 [main] DEBUG: edu.cmu.ri.createlab.terk.properties.BasicPropertyManager: ServantPropertyManager.setReadOnlyProperty(device.count,1)
+2023-09-08 10:48:06,984 [main] DEBUG: edu.cmu.ri.createlab.terk.properties.BasicPropertyManager: ServantPropertyManager.setReadOnlyProperty(::TeRK::AudioController::min-amplitude,0)
+2023-09-08 10:48:06,984 [main] DEBUG: edu.cmu.ri.createlab.terk.properties.BasicPropertyManager: ServantPropertyManager.setReadOnlyProperty(::TeRK::AudioController::max-amplitude,10)
+2023-09-08 10:48:06,984 [main] DEBUG: edu.cmu.ri.createlab.terk.properties.BasicPropertyManager: ServantPropertyManager.setReadOnlyProperty(::TeRK::AudioController::min-duration,0)
+2023-09-08 10:48:06,984 [main] DEBUG: edu.cmu.ri.createlab.terk.properties.BasicPropertyManager: ServantPropertyManager.setReadOnlyProperty(::TeRK::AudioController::max-duration,2147483647)
+2023-09-08 10:48:06,984 [main] DEBUG: edu.cmu.ri.createlab.terk.properties.BasicPropertyManager: ServantPropertyManager.setReadOnlyProperty(::TeRK::AudioController::min-frequency,0)
+2023-09-08 10:48:06,984 [main] DEBUG: edu.cmu.ri.createlab.terk.properties.BasicPropertyManager: ServantPropertyManager.setReadOnlyProperty(::TeRK::AudioController::max-frequency,2147483647)
+2023-09-08 10:48:06,984 [main] DEBUG: edu.cmu.ri.createlab.audio.AudioHelper: AudioHelper.playTone(261,10,5)
+2023-09-08 10:48:07,132 [main] DEBUG: edu.cmu.ri.createlab.audio.AudioHelper: AudioHelper.playTone(294,10,5)
+2023-09-08 10:48:07,157 [main] DEBUG: edu.cmu.ri.createlab.audio.AudioHelper: AudioHelper.playTone(330,10,5)
+2023-09-08 10:48:07,182 [main] DEBUG: edu.cmu.ri.createlab.audio.AudioHelper: AudioHelper.playTone(349,10,5)
+2023-09-08 10:48:07,208 [main] DEBUG: edu.cmu.ri.createlab.audio.AudioHelper: AudioHelper.playTone(392,10,5)
+2023-09-08 10:48:07,233 [main] DEBUG: edu.cmu.ri.createlab.audio.AudioHelper: AudioHelper.playTone(440,10,5)
+2023-09-08 10:48:07,257 [main] DEBUG: edu.cmu.ri.createlab.audio.AudioHelper: AudioHelper.playTone(494,10,5)
+2023-09-08 10:48:07,282 [main] DEBUG: edu.cmu.ri.createlab.audio.AudioHelper: AudioHelper.playTone(261,10,5)
+2023-09-08 10:48:07,308 [main] DEBUG: edu.cmu.ri.createlab.terk.application.TerkApplication: TerkApplication.shutdown()
+2023-09-08 10:48:07,308 [main] DEBUG: edu.cmu.ri.createlab.terk.application.TerkApplication: TerkApplication$shutdownRunnable.run()
+2023-09-08 10:48:07,308 [main] DEBUG: edu.cmu.ri.createlab.terk.robot.finch.LocalFinchConnectionStrategy: LocalFinchConnectionStrategy.prepareForShutdown()
+2023-09-08 10:48:07,308 [main] DEBUG: edu.cmu.ri.createlab.terk.robot.finch.LocalFinchConnectionStrategy: LocalFinchConnectionStrategy.disconnect()
+2023-09-08 10:48:07,308 [main] DEBUG: edu.cmu.ri.createlab.device.connectivity.BaseCreateLabDeviceConnectivityManager: BaseCreateLabDeviceConnectivityManager.disconnect()
+2023-09-08 10:48:07,308 [main] DEBUG: edu.cmu.ri.createlab.terk.robot.finch.DefaultFinchController: DefaultFinchController.disconnect(): Shutting down finch pinger...
+2023-09-08 10:48:07,308 [main] DEBUG: edu.cmu.ri.createlab.terk.robot.finch.DefaultFinchController: DefaultFinchController.disconnect(): Successfully shut down finch pinger.
+2023-09-08 10:48:07,308 [main] DEBUG: edu.cmu.ri.createlab.terk.robot.finch.DefaultFinchController: DefaultFinchController.disconnect(): Now attempting to send the disconnect command to the finch
+2023-09-08 10:48:07,311 [main] DEBUG: edu.cmu.ri.createlab.terk.robot.finch.DefaultFinchController: DefaultFinchController.disconnect(): Successfully disconnected from the finch.
+2023-09-08 10:48:07,311 [main] DEBUG: edu.cmu.ri.createlab.terk.robot.finch.DefaultFinchController: DefaultFinchController.disconnect(): Now shutting down the HIDCommandExecutionQueue...
+2023-09-08 10:48:07,311 [main] DEBUG: edu.cmu.ri.createlab.usb.hid.HIDCommandExecutionQueue: HIDCommandExecutionQueue.shutdown(): Shutting down the HID device command execution queue
+2023-09-08 10:48:07,311 [main] DEBUG: edu.cmu.ri.createlab.usb.hid.HIDCommandExecutionQueue: HIDCommandExecutionQueue.shutdown(): Unexecuted tasks: 0
+2023-09-08 10:48:07,311 [main] DEBUG: edu.cmu.ri.createlab.usb.hid.HIDCommandExecutionQueue: HIDCommandExecutionQueue.shutdown(): Waiting for the HID device command execution queue to shutdown.
+2023-09-08 10:48:07,311 [main] DEBUG: edu.cmu.ri.createlab.usb.hid.HIDCommandExecutionQueue: HIDCommandExecutionQueue.shutdown(): HID device command execution queue successfully shutdown
+2023-09-08 10:48:07,311 [main] DEBUG: edu.cmu.ri.createlab.usb.hid.HIDCommandExecutionQueue: HIDCommandExecutionQueue.shutdown(): Now attempting to disconnect from the HID device...
+2023-09-08 10:48:07,312 [main] ERROR: edu.cmu.ri.createlab.usb.hid.windows.WinError: WinError.findById(): Failed to find error code [14007], returning UNKNOWN.
+2023-09-08 10:48:07,312 [main] ERROR: edu.cmu.ri.createlab.usb.hid.windows.WindowsHIDDevice: WindowsHIDDevice.disconnect(): Failed to disconnect.  Return was [true] and last error was [WinError{id=-1, name='Unknown: unknown status'}]
+2023-09-08 10:48:07,312 [main] DEBUG: edu.cmu.ri.createlab.usb.hid.HIDCommandExecutionQueue: HIDCommandExecutionQueue.shutdown(): Failed to disconnect from the HID device.
+2023-09-08 10:48:07,312 [main] DEBUG: edu.cmu.ri.createlab.terk.robot.finch.LocalFinchConnectionStrategy: LocalFinchConnectionStrategy.handleConnectionStateChange(): OLD [Connected]  NEW [Disconnected]  port []
+2023-09-08 10:49:03,907 [main] DEBUG: edu.cmu.ri.createlab.terk.application.TerkApplication: TerkApplication.TerkApplication()
+2023-09-08 10:49:03,908 [main] INFO : edu.cmu.ri.createlab.terk.application.TerkApplication: TerkApplication.TerkApplication(): System property [terk-application.connection-strategy.class.name] is not defined.  Attempting to use default [edu.cmu.ri.createlab.terk.robot.finch.LocalFinchConnectionStrategy] implementation class instead.
+2023-09-08 10:49:03,914 [main] DEBUG: edu.cmu.ri.createlab.terk.application.TerkApplication: TerkApplication.TerkApplication(): successfully instantiated ConnectionStrategy implementation class [edu.cmu.ri.createlab.terk.robot.finch.LocalFinchConnectionStrategy]
+2023-09-08 10:49:04,063 [main] DEBUG: edu.cmu.ri.createlab.device.connectivity.BaseCreateLabDeviceConnectivityManager: BaseCreateLabDeviceConnectivityManager: scanAndConnectWorkhorseRunnable.run()
+2023-09-08 10:49:04,063 [main] DEBUG: edu.cmu.ri.createlab.device.connectivity.BaseCreateLabDeviceConnectivityManager: BaseCreateLabDeviceConnectivityManager.disconnect()
+2023-09-08 10:49:04,063 [main] DEBUG: edu.cmu.ri.createlab.terk.robot.finch.LocalFinchConnectionStrategy: LocalFinchConnectionStrategy.handleConnectionStateChange(): OLD [Disconnected]  NEW [Disconnected]  port []
+2023-09-08 10:49:04,064 [BaseCreateLabDeviceConnectivityManager.executorService pool-1-thread-1] DEBUG: edu.cmu.ri.createlab.device.connectivity.BaseCreateLabDeviceConnectivityManager: CreateLabDeviceConnectivityManagerImpl$DeviceScanner.run()
+2023-09-08 10:49:04,064 [BaseCreateLabDeviceConnectivityManager.executorService pool-1-thread-1] DEBUG: edu.cmu.ri.createlab.terk.robot.finch.LocalFinchConnectionStrategy: LocalFinchConnectionStrategy.handleConnectionStateChange(): OLD [Disconnected]  NEW [Scanning]  port []
+2023-09-08 10:49:04,067 [BaseCreateLabDeviceConnectivityManager.executorService pool-1-thread-1] DEBUG: edu.cmu.ri.createlab.terk.robot.finch.DefaultFinchController: DefaultFinchController.create(): creating HID device for vendor ID [2354] and product ID [1111]
+2023-09-08 10:49:04,071 [BaseCreateLabDeviceConnectivityManager.executorService pool-1-thread-1] DEBUG: edu.cmu.ri.createlab.terk.robot.finch.DefaultFinchController: DefaultFinchController.create(): attempting connection...
+2023-09-08 10:49:04,312 [BaseCreateLabDeviceConnectivityManager.executorService pool-1-thread-1] DEBUG: edu.cmu.ri.createlab.usb.hid.windows.WindowsHIDDevice: WindowsHIDDevice.disconnect(): disconnected successfully
+2023-09-08 10:49:04,325 [BaseCreateLabDeviceConnectivityManager.executorService pool-1-thread-1] DEBUG: edu.cmu.ri.createlab.usb.hid.windows.WindowsHIDDevice: WindowsHIDDevice.connect(): connection successful
+2023-09-08 10:49:04,353 [BaseCreateLabDeviceConnectivityManager.executorService pool-1-thread-1] DEBUG: edu.cmu.ri.createlab.device.connectivity.BaseCreateLabDeviceConnectivityManager: CreateLabDeviceConnectivityManagerImpl$DeviceScanner.run(): connection established!
+2023-09-08 10:49:04,353 [BaseCreateLabDeviceConnectivityManager.executorService pool-1-thread-1] DEBUG: edu.cmu.ri.createlab.terk.robot.finch.LocalFinchConnectionStrategy: LocalFinchConnectionStrategy.handleConnectionStateChange(): OLD [Scanning]  NEW [Connected]  port [\\?\hid#vid_2354&pid_1111#6&3752f9b6&0&0000#{4d1e55b2-f16f-11cf-88cb-001111000030}]
+2023-09-08 10:49:04,358 [main] DEBUG: edu.cmu.ri.createlab.terk.robot.finch.services.FinchServiceManager: FinchServiceManager.loadService() needs to load the [::TeRK::AudioController] service
+2023-09-08 10:49:04,358 [main] DEBUG: edu.cmu.ri.createlab.terk.robot.finch.services.FinchServiceFactory: FinchServiceFactory.createService(::TeRK::AudioController)
+2023-09-08 10:49:04,360 [main] DEBUG: edu.cmu.ri.createlab.terk.properties.BasicPropertyManager: ServantPropertyManager.setReadOnlyProperty(device.count,1)
+2023-09-08 10:49:04,360 [main] DEBUG: edu.cmu.ri.createlab.terk.properties.BasicPropertyManager: ServantPropertyManager.setReadOnlyProperty(::TeRK::AudioController::min-amplitude,0)
+2023-09-08 10:49:04,360 [main] DEBUG: edu.cmu.ri.createlab.terk.properties.BasicPropertyManager: ServantPropertyManager.setReadOnlyProperty(::TeRK::AudioController::max-amplitude,10)
+2023-09-08 10:49:04,360 [main] DEBUG: edu.cmu.ri.createlab.terk.properties.BasicPropertyManager: ServantPropertyManager.setReadOnlyProperty(::TeRK::AudioController::min-duration,0)
+2023-09-08 10:49:04,360 [main] DEBUG: edu.cmu.ri.createlab.terk.properties.BasicPropertyManager: ServantPropertyManager.setReadOnlyProperty(::TeRK::AudioController::max-duration,2147483647)
+2023-09-08 10:49:04,360 [main] DEBUG: edu.cmu.ri.createlab.terk.properties.BasicPropertyManager: ServantPropertyManager.setReadOnlyProperty(::TeRK::AudioController::min-frequency,0)
+2023-09-08 10:49:04,360 [main] DEBUG: edu.cmu.ri.createlab.terk.properties.BasicPropertyManager: ServantPropertyManager.setReadOnlyProperty(::TeRK::AudioController::max-frequency,2147483647)
+2023-09-08 10:49:04,361 [main] DEBUG: edu.cmu.ri.createlab.audio.AudioHelper: AudioHelper.playTone(261,10,5)
+2023-09-08 10:49:04,527 [main] DEBUG: edu.cmu.ri.createlab.audio.AudioHelper: AudioHelper.playTone(294,10,5)
+2023-09-08 10:49:04,556 [main] DEBUG: edu.cmu.ri.createlab.audio.AudioHelper: AudioHelper.playTone(330,10,5)
+2023-09-08 10:49:04,582 [main] DEBUG: edu.cmu.ri.createlab.audio.AudioHelper: AudioHelper.playTone(349,10,5)
+2023-09-08 10:49:04,610 [main] DEBUG: edu.cmu.ri.createlab.audio.AudioHelper: AudioHelper.playTone(392,10,5)
+2023-09-08 10:49:04,638 [main] DEBUG: edu.cmu.ri.createlab.audio.AudioHelper: AudioHelper.playTone(440,10,5)
+2023-09-08 10:49:04,664 [main] DEBUG: edu.cmu.ri.createlab.audio.AudioHelper: AudioHelper.playTone(494,10,5)
+2023-09-08 10:49:04,688 [main] DEBUG: edu.cmu.ri.createlab.audio.AudioHelper: AudioHelper.playTone(261,10,5)
+2023-09-08 10:49:04,714 [main] DEBUG: edu.cmu.ri.createlab.terk.application.TerkApplication: TerkApplication.shutdown()
+2023-09-08 10:49:04,715 [main] DEBUG: edu.cmu.ri.createlab.terk.application.TerkApplication: TerkApplication$shutdownRunnable.run()
+2023-09-08 10:49:04,715 [main] DEBUG: edu.cmu.ri.createlab.terk.robot.finch.LocalFinchConnectionStrategy: LocalFinchConnectionStrategy.prepareForShutdown()
+2023-09-08 10:49:04,715 [main] DEBUG: edu.cmu.ri.createlab.terk.robot.finch.LocalFinchConnectionStrategy: LocalFinchConnectionStrategy.disconnect()
+2023-09-08 10:49:04,715 [main] DEBUG: edu.cmu.ri.createlab.device.connectivity.BaseCreateLabDeviceConnectivityManager: BaseCreateLabDeviceConnectivityManager.disconnect()
+2023-09-08 10:49:04,715 [main] DEBUG: edu.cmu.ri.createlab.terk.robot.finch.DefaultFinchController: DefaultFinchController.disconnect(): Shutting down finch pinger...
+2023-09-08 10:49:04,715 [main] DEBUG: edu.cmu.ri.createlab.terk.robot.finch.DefaultFinchController: DefaultFinchController.disconnect(): Successfully shut down finch pinger.
+2023-09-08 10:49:04,715 [main] DEBUG: edu.cmu.ri.createlab.terk.robot.finch.DefaultFinchController: DefaultFinchController.disconnect(): Now attempting to send the disconnect command to the finch
+2023-09-08 10:49:04,721 [main] DEBUG: edu.cmu.ri.createlab.terk.robot.finch.DefaultFinchController: DefaultFinchController.disconnect(): Successfully disconnected from the finch.
+2023-09-08 10:49:04,721 [main] DEBUG: edu.cmu.ri.createlab.terk.robot.finch.DefaultFinchController: DefaultFinchController.disconnect(): Now shutting down the HIDCommandExecutionQueue...
+2023-09-08 10:49:04,721 [main] DEBUG: edu.cmu.ri.createlab.usb.hid.HIDCommandExecutionQueue: HIDCommandExecutionQueue.shutdown(): Shutting down the HID device command execution queue
+2023-09-08 10:49:04,721 [main] DEBUG: edu.cmu.ri.createlab.usb.hid.HIDCommandExecutionQueue: HIDCommandExecutionQueue.shutdown(): Unexecuted tasks: 0
+2023-09-08 10:49:04,722 [main] DEBUG: edu.cmu.ri.createlab.usb.hid.HIDCommandExecutionQueue: HIDCommandExecutionQueue.shutdown(): Waiting for the HID device command execution queue to shutdown.
+2023-09-08 10:49:04,722 [main] DEBUG: edu.cmu.ri.createlab.usb.hid.HIDCommandExecutionQueue: HIDCommandExecutionQueue.shutdown(): HID device command execution queue successfully shutdown
+2023-09-08 10:49:04,722 [main] DEBUG: edu.cmu.ri.createlab.usb.hid.HIDCommandExecutionQueue: HIDCommandExecutionQueue.shutdown(): Now attempting to disconnect from the HID device...
+2023-09-08 10:49:04,722 [main] ERROR: edu.cmu.ri.createlab.usb.hid.windows.WinError: WinError.findById(): Failed to find error code [14007], returning UNKNOWN.
+2023-09-08 10:49:04,723 [main] ERROR: edu.cmu.ri.createlab.usb.hid.windows.WindowsHIDDevice: WindowsHIDDevice.disconnect(): Failed to disconnect.  Return was [true] and last error was [WinError{id=-1, name='Unknown: unknown status'}]
+2023-09-08 10:49:04,723 [main] DEBUG: edu.cmu.ri.createlab.usb.hid.HIDCommandExecutionQueue: HIDCommandExecutionQueue.shutdown(): Failed to disconnect from the HID device.
+2023-09-08 10:49:04,723 [main] DEBUG: edu.cmu.ri.createlab.terk.robot.finch.LocalFinchConnectionStrategy: LocalFinchConnectionStrategy.handleConnectionStateChange(): OLD [Connected]  NEW [Disconnected]  port []
+2023-09-08 10:50:22,032 [main] DEBUG: edu.cmu.ri.createlab.terk.application.TerkApplication: TerkApplication.TerkApplication()
+2023-09-08 10:50:22,033 [main] INFO : edu.cmu.ri.createlab.terk.application.TerkApplication: TerkApplication.TerkApplication(): System property [terk-application.connection-strategy.class.name] is not defined.  Attempting to use default [edu.cmu.ri.createlab.terk.robot.finch.LocalFinchConnectionStrategy] implementation class instead.
+2023-09-08 10:50:22,039 [main] DEBUG: edu.cmu.ri.createlab.terk.application.TerkApplication: TerkApplication.TerkApplication(): successfully instantiated ConnectionStrategy implementation class [edu.cmu.ri.createlab.terk.robot.finch.LocalFinchConnectionStrategy]
+2023-09-08 10:50:22,184 [main] DEBUG: edu.cmu.ri.createlab.device.connectivity.BaseCreateLabDeviceConnectivityManager: BaseCreateLabDeviceConnectivityManager: scanAndConnectWorkhorseRunnable.run()
+2023-09-08 10:50:22,184 [main] DEBUG: edu.cmu.ri.createlab.device.connectivity.BaseCreateLabDeviceConnectivityManager: BaseCreateLabDeviceConnectivityManager.disconnect()
+2023-09-08 10:50:22,184 [main] DEBUG: edu.cmu.ri.createlab.terk.robot.finch.LocalFinchConnectionStrategy: LocalFinchConnectionStrategy.handleConnectionStateChange(): OLD [Disconnected]  NEW [Disconnected]  port []
+2023-09-08 10:50:22,185 [BaseCreateLabDeviceConnectivityManager.executorService pool-1-thread-1] DEBUG: edu.cmu.ri.createlab.device.connectivity.BaseCreateLabDeviceConnectivityManager: CreateLabDeviceConnectivityManagerImpl$DeviceScanner.run()
+2023-09-08 10:50:22,185 [BaseCreateLabDeviceConnectivityManager.executorService pool-1-thread-1] DEBUG: edu.cmu.ri.createlab.terk.robot.finch.LocalFinchConnectionStrategy: LocalFinchConnectionStrategy.handleConnectionStateChange(): OLD [Disconnected]  NEW [Scanning]  port []
+2023-09-08 10:50:22,189 [BaseCreateLabDeviceConnectivityManager.executorService pool-1-thread-1] DEBUG: edu.cmu.ri.createlab.terk.robot.finch.DefaultFinchController: DefaultFinchController.create(): creating HID device for vendor ID [2354] and product ID [1111]
+2023-09-08 10:50:22,193 [BaseCreateLabDeviceConnectivityManager.executorService pool-1-thread-1] DEBUG: edu.cmu.ri.createlab.terk.robot.finch.DefaultFinchController: DefaultFinchController.create(): attempting connection...
+2023-09-08 10:50:22,437 [BaseCreateLabDeviceConnectivityManager.executorService pool-1-thread-1] DEBUG: edu.cmu.ri.createlab.usb.hid.windows.WindowsHIDDevice: WindowsHIDDevice.disconnect(): disconnected successfully
+2023-09-08 10:50:22,447 [BaseCreateLabDeviceConnectivityManager.executorService pool-1-thread-1] DEBUG: edu.cmu.ri.createlab.usb.hid.windows.WindowsHIDDevice: WindowsHIDDevice.connect(): connection successful
+2023-09-08 10:50:22,475 [BaseCreateLabDeviceConnectivityManager.executorService pool-1-thread-1] DEBUG: edu.cmu.ri.createlab.device.connectivity.BaseCreateLabDeviceConnectivityManager: CreateLabDeviceConnectivityManagerImpl$DeviceScanner.run(): connection established!
+2023-09-08 10:50:22,475 [BaseCreateLabDeviceConnectivityManager.executorService pool-1-thread-1] DEBUG: edu.cmu.ri.createlab.terk.robot.finch.LocalFinchConnectionStrategy: LocalFinchConnectionStrategy.handleConnectionStateChange(): OLD [Scanning]  NEW [Connected]  port [\\?\hid#vid_2354&pid_1111#6&3752f9b6&0&0000#{4d1e55b2-f16f-11cf-88cb-001111000030}]
+2023-09-08 10:50:22,480 [main] DEBUG: edu.cmu.ri.createlab.terk.robot.finch.services.FinchServiceManager: FinchServiceManager.loadService() needs to load the [::TeRK::AudioController] service
+2023-09-08 10:50:22,480 [main] DEBUG: edu.cmu.ri.createlab.terk.robot.finch.services.FinchServiceFactory: FinchServiceFactory.createService(::TeRK::AudioController)
+2023-09-08 10:50:22,482 [main] DEBUG: edu.cmu.ri.createlab.terk.properties.BasicPropertyManager: ServantPropertyManager.setReadOnlyProperty(device.count,1)
+2023-09-08 10:50:22,482 [main] DEBUG: edu.cmu.ri.createlab.terk.properties.BasicPropertyManager: ServantPropertyManager.setReadOnlyProperty(::TeRK::AudioController::min-amplitude,0)
+2023-09-08 10:50:22,482 [main] DEBUG: edu.cmu.ri.createlab.terk.properties.BasicPropertyManager: ServantPropertyManager.setReadOnlyProperty(::TeRK::AudioController::max-amplitude,10)
+2023-09-08 10:50:22,482 [main] DEBUG: edu.cmu.ri.createlab.terk.properties.BasicPropertyManager: ServantPropertyManager.setReadOnlyProperty(::TeRK::AudioController::min-duration,0)
+2023-09-08 10:50:22,482 [main] DEBUG: edu.cmu.ri.createlab.terk.properties.BasicPropertyManager: ServantPropertyManager.setReadOnlyProperty(::TeRK::AudioController::max-duration,2147483647)
+2023-09-08 10:50:22,482 [main] DEBUG: edu.cmu.ri.createlab.terk.properties.BasicPropertyManager: ServantPropertyManager.setReadOnlyProperty(::TeRK::AudioController::min-frequency,0)
+2023-09-08 10:50:22,482 [main] DEBUG: edu.cmu.ri.createlab.terk.properties.BasicPropertyManager: ServantPropertyManager.setReadOnlyProperty(::TeRK::AudioController::max-frequency,2147483647)
+2023-09-08 10:50:22,483 [main] DEBUG: edu.cmu.ri.createlab.audio.AudioHelper: AudioHelper.playTone(261,100,5)
+2023-09-08 10:50:22,643 [main] DEBUG: edu.cmu.ri.createlab.audio.AudioHelper: AudioHelper.playTone(294,100,5)
+2023-09-08 10:50:22,671 [main] DEBUG: edu.cmu.ri.createlab.audio.AudioHelper: AudioHelper.playTone(330,100,5)
+2023-09-08 10:50:22,699 [main] DEBUG: edu.cmu.ri.createlab.audio.AudioHelper: AudioHelper.playTone(349,100,5)
+2023-09-08 10:50:22,725 [main] DEBUG: edu.cmu.ri.createlab.audio.AudioHelper: AudioHelper.playTone(392,100,5)
+2023-09-08 10:50:22,750 [main] DEBUG: edu.cmu.ri.createlab.audio.AudioHelper: AudioHelper.playTone(440,100,5)
+2023-09-08 10:50:22,778 [main] DEBUG: edu.cmu.ri.createlab.audio.AudioHelper: AudioHelper.playTone(494,100,5)
+2023-09-08 10:50:22,805 [main] DEBUG: edu.cmu.ri.createlab.audio.AudioHelper: AudioHelper.playTone(261,100,5)
+2023-09-08 10:50:22,831 [main] DEBUG: edu.cmu.ri.createlab.terk.application.TerkApplication: TerkApplication.shutdown()
+2023-09-08 10:50:22,831 [main] DEBUG: edu.cmu.ri.createlab.terk.application.TerkApplication: TerkApplication$shutdownRunnable.run()
+2023-09-08 10:50:22,831 [main] DEBUG: edu.cmu.ri.createlab.terk.robot.finch.LocalFinchConnectionStrategy: LocalFinchConnectionStrategy.prepareForShutdown()
+2023-09-08 10:50:22,831 [main] DEBUG: edu.cmu.ri.createlab.terk.robot.finch.LocalFinchConnectionStrategy: LocalFinchConnectionStrategy.disconnect()
+2023-09-08 10:50:22,831 [main] DEBUG: edu.cmu.ri.createlab.device.connectivity.BaseCreateLabDeviceConnectivityManager: BaseCreateLabDeviceConnectivityManager.disconnect()
+2023-09-08 10:50:22,831 [main] DEBUG: edu.cmu.ri.createlab.terk.robot.finch.DefaultFinchController: DefaultFinchController.disconnect(): Shutting down finch pinger...
+2023-09-08 10:50:22,831 [main] DEBUG: edu.cmu.ri.createlab.terk.robot.finch.DefaultFinchController: DefaultFinchController.disconnect(): Successfully shut down finch pinger.
+2023-09-08 10:50:22,832 [main] DEBUG: edu.cmu.ri.createlab.terk.robot.finch.DefaultFinchController: DefaultFinchController.disconnect(): Now attempting to send the disconnect command to the finch
+2023-09-08 10:50:22,835 [main] DEBUG: edu.cmu.ri.createlab.terk.robot.finch.DefaultFinchController: DefaultFinchController.disconnect(): Successfully disconnected from the finch.
+2023-09-08 10:50:22,835 [main] DEBUG: edu.cmu.ri.createlab.terk.robot.finch.DefaultFinchController: DefaultFinchController.disconnect(): Now shutting down the HIDCommandExecutionQueue...
+2023-09-08 10:50:22,835 [main] DEBUG: edu.cmu.ri.createlab.usb.hid.HIDCommandExecutionQueue: HIDCommandExecutionQueue.shutdown(): Shutting down the HID device command execution queue
+2023-09-08 10:50:22,835 [main] DEBUG: edu.cmu.ri.createlab.usb.hid.HIDCommandExecutionQueue: HIDCommandExecutionQueue.shutdown(): Unexecuted tasks: 0
+2023-09-08 10:50:22,835 [main] DEBUG: edu.cmu.ri.createlab.usb.hid.HIDCommandExecutionQueue: HIDCommandExecutionQueue.shutdown(): Waiting for the HID device command execution queue to shutdown.
+2023-09-08 10:50:22,835 [main] DEBUG: edu.cmu.ri.createlab.usb.hid.HIDCommandExecutionQueue: HIDCommandExecutionQueue.shutdown(): HID device command execution queue successfully shutdown
+2023-09-08 10:50:22,835 [main] DEBUG: edu.cmu.ri.createlab.usb.hid.HIDCommandExecutionQueue: HIDCommandExecutionQueue.shutdown(): Now attempting to disconnect from the HID device...
+2023-09-08 10:50:22,835 [main] ERROR: edu.cmu.ri.createlab.usb.hid.windows.WinError: WinError.findById(): Failed to find error code [14007], returning UNKNOWN.
+2023-09-08 10:50:22,835 [main] ERROR: edu.cmu.ri.createlab.usb.hid.windows.WindowsHIDDevice: WindowsHIDDevice.disconnect(): Failed to disconnect.  Return was [true] and last error was [WinError{id=-1, name='Unknown: unknown status'}]
+2023-09-08 10:50:22,835 [main] DEBUG: edu.cmu.ri.createlab.usb.hid.HIDCommandExecutionQueue: HIDCommandExecutionQueue.shutdown(): Failed to disconnect from the HID device.
+2023-09-08 10:50:22,835 [main] DEBUG: edu.cmu.ri.createlab.terk.robot.finch.LocalFinchConnectionStrategy: LocalFinchConnectionStrategy.handleConnectionStateChange(): OLD [Connected]  NEW [Disconnected]  port []
+2023-09-08 10:52:46,870 [main] DEBUG: edu.cmu.ri.createlab.terk.application.TerkApplication: TerkApplication.TerkApplication()
+2023-09-08 10:52:46,871 [main] INFO : edu.cmu.ri.createlab.terk.application.TerkApplication: TerkApplication.TerkApplication(): System property [terk-application.connection-strategy.class.name] is not defined.  Attempting to use default [edu.cmu.ri.createlab.terk.robot.finch.LocalFinchConnectionStrategy] implementation class instead.
+2023-09-08 10:52:46,878 [main] DEBUG: edu.cmu.ri.createlab.terk.application.TerkApplication: TerkApplication.TerkApplication(): successfully instantiated ConnectionStrategy implementation class [edu.cmu.ri.createlab.terk.robot.finch.LocalFinchConnectionStrategy]
+2023-09-08 10:52:47,028 [main] DEBUG: edu.cmu.ri.createlab.device.connectivity.BaseCreateLabDeviceConnectivityManager: BaseCreateLabDeviceConnectivityManager: scanAndConnectWorkhorseRunnable.run()
+2023-09-08 10:52:47,028 [main] DEBUG: edu.cmu.ri.createlab.device.connectivity.BaseCreateLabDeviceConnectivityManager: BaseCreateLabDeviceConnectivityManager.disconnect()
+2023-09-08 10:52:47,028 [main] DEBUG: edu.cmu.ri.createlab.terk.robot.finch.LocalFinchConnectionStrategy: LocalFinchConnectionStrategy.handleConnectionStateChange(): OLD [Disconnected]  NEW [Disconnected]  port []
+2023-09-08 10:52:47,029 [BaseCreateLabDeviceConnectivityManager.executorService pool-1-thread-1] DEBUG: edu.cmu.ri.createlab.device.connectivity.BaseCreateLabDeviceConnectivityManager: CreateLabDeviceConnectivityManagerImpl$DeviceScanner.run()
+2023-09-08 10:52:47,029 [BaseCreateLabDeviceConnectivityManager.executorService pool-1-thread-1] DEBUG: edu.cmu.ri.createlab.terk.robot.finch.LocalFinchConnectionStrategy: LocalFinchConnectionStrategy.handleConnectionStateChange(): OLD [Disconnected]  NEW [Scanning]  port []
+2023-09-08 10:52:47,032 [BaseCreateLabDeviceConnectivityManager.executorService pool-1-thread-1] DEBUG: edu.cmu.ri.createlab.terk.robot.finch.DefaultFinchController: DefaultFinchController.create(): creating HID device for vendor ID [2354] and product ID [1111]
+2023-09-08 10:52:47,036 [BaseCreateLabDeviceConnectivityManager.executorService pool-1-thread-1] DEBUG: edu.cmu.ri.createlab.terk.robot.finch.DefaultFinchController: DefaultFinchController.create(): attempting connection...
+2023-09-08 10:52:47,288 [BaseCreateLabDeviceConnectivityManager.executorService pool-1-thread-1] DEBUG: edu.cmu.ri.createlab.usb.hid.windows.WindowsHIDDevice: WindowsHIDDevice.disconnect(): disconnected successfully
+2023-09-08 10:52:47,300 [BaseCreateLabDeviceConnectivityManager.executorService pool-1-thread-1] DEBUG: edu.cmu.ri.createlab.usb.hid.windows.WindowsHIDDevice: WindowsHIDDevice.connect(): connection successful
+2023-09-08 10:52:47,326 [BaseCreateLabDeviceConnectivityManager.executorService pool-1-thread-1] DEBUG: edu.cmu.ri.createlab.device.connectivity.BaseCreateLabDeviceConnectivityManager: CreateLabDeviceConnectivityManagerImpl$DeviceScanner.run(): connection established!
+2023-09-08 10:52:47,327 [BaseCreateLabDeviceConnectivityManager.executorService pool-1-thread-1] DEBUG: edu.cmu.ri.createlab.terk.robot.finch.LocalFinchConnectionStrategy: LocalFinchConnectionStrategy.handleConnectionStateChange(): OLD [Scanning]  NEW [Connected]  port [\\?\hid#vid_2354&pid_1111#6&3752f9b6&0&0000#{4d1e55b2-f16f-11cf-88cb-001111000030}]
+2023-09-08 10:52:47,331 [main] DEBUG: edu.cmu.ri.createlab.terk.robot.finch.services.FinchServiceManager: FinchServiceManager.loadService() needs to load the [::TeRK::AudioController] service
+2023-09-08 10:52:47,331 [main] DEBUG: edu.cmu.ri.createlab.terk.robot.finch.services.FinchServiceFactory: FinchServiceFactory.createService(::TeRK::AudioController)
+2023-09-08 10:52:47,333 [main] DEBUG: edu.cmu.ri.createlab.terk.properties.BasicPropertyManager: ServantPropertyManager.setReadOnlyProperty(device.count,1)
+2023-09-08 10:52:47,333 [main] DEBUG: edu.cmu.ri.createlab.terk.properties.BasicPropertyManager: ServantPropertyManager.setReadOnlyProperty(::TeRK::AudioController::min-amplitude,0)
+2023-09-08 10:52:47,333 [main] DEBUG: edu.cmu.ri.createlab.terk.properties.BasicPropertyManager: ServantPropertyManager.setReadOnlyProperty(::TeRK::AudioController::max-amplitude,10)
+2023-09-08 10:52:47,333 [main] DEBUG: edu.cmu.ri.createlab.terk.properties.BasicPropertyManager: ServantPropertyManager.setReadOnlyProperty(::TeRK::AudioController::min-duration,0)
+2023-09-08 10:52:47,333 [main] DEBUG: edu.cmu.ri.createlab.terk.properties.BasicPropertyManager: ServantPropertyManager.setReadOnlyProperty(::TeRK::AudioController::max-duration,2147483647)
+2023-09-08 10:52:47,333 [main] DEBUG: edu.cmu.ri.createlab.terk.properties.BasicPropertyManager: ServantPropertyManager.setReadOnlyProperty(::TeRK::AudioController::min-frequency,0)
+2023-09-08 10:52:47,333 [main] DEBUG: edu.cmu.ri.createlab.terk.properties.BasicPropertyManager: ServantPropertyManager.setReadOnlyProperty(::TeRK::AudioController::max-frequency,2147483647)
+2023-09-08 10:52:47,334 [main] DEBUG: edu.cmu.ri.createlab.audio.AudioHelper: AudioHelper.playTone(261,10,3000)
+2023-09-08 10:52:50,575 [main] DEBUG: edu.cmu.ri.createlab.audio.AudioHelper: AudioHelper.playTone(294,10,3000)
+2023-09-08 10:52:53,673 [main] DEBUG: edu.cmu.ri.createlab.audio.AudioHelper: AudioHelper.playTone(330,10,3000)
+2023-09-08 10:52:56,773 [main] DEBUG: edu.cmu.ri.createlab.audio.AudioHelper: AudioHelper.playTone(349,10,3000)
+2023-09-08 10:52:59,872 [main] DEBUG: edu.cmu.ri.createlab.audio.AudioHelper: AudioHelper.playTone(392,10,3000)
+2023-09-08 10:53:02,958 [main] DEBUG: edu.cmu.ri.createlab.audio.AudioHelper: AudioHelper.playTone(440,10,3000)
+2023-09-08 10:53:06,067 [main] DEBUG: edu.cmu.ri.createlab.audio.AudioHelper: AudioHelper.playTone(494,10,3000)
+2023-09-08 10:53:09,164 [main] DEBUG: edu.cmu.ri.createlab.audio.AudioHelper: AudioHelper.playTone(261,10,3000)
+2023-09-08 10:53:12,260 [main] DEBUG: edu.cmu.ri.createlab.terk.application.TerkApplication: TerkApplication.shutdown()
+2023-09-08 10:53:12,260 [main] DEBUG: edu.cmu.ri.createlab.terk.application.TerkApplication: TerkApplication$shutdownRunnable.run()
+2023-09-08 10:53:12,260 [main] DEBUG: edu.cmu.ri.createlab.terk.robot.finch.LocalFinchConnectionStrategy: LocalFinchConnectionStrategy.prepareForShutdown()
+2023-09-08 10:53:12,260 [main] DEBUG: edu.cmu.ri.createlab.terk.robot.finch.LocalFinchConnectionStrategy: LocalFinchConnectionStrategy.disconnect()
+2023-09-08 10:53:12,260 [main] DEBUG: edu.cmu.ri.createlab.device.connectivity.BaseCreateLabDeviceConnectivityManager: BaseCreateLabDeviceConnectivityManager.disconnect()
+2023-09-08 10:53:12,260 [main] DEBUG: edu.cmu.ri.createlab.terk.robot.finch.DefaultFinchController: DefaultFinchController.disconnect(): Shutting down finch pinger...
+2023-09-08 10:53:12,260 [main] DEBUG: edu.cmu.ri.createlab.terk.robot.finch.DefaultFinchController: DefaultFinchController.disconnect(): Successfully shut down finch pinger.
+2023-09-08 10:53:12,260 [main] DEBUG: edu.cmu.ri.createlab.terk.robot.finch.DefaultFinchController: DefaultFinchController.disconnect(): Now attempting to send the disconnect command to the finch
+2023-09-08 10:53:12,262 [main] DEBUG: edu.cmu.ri.createlab.terk.robot.finch.DefaultFinchController: DefaultFinchController.disconnect(): Successfully disconnected from the finch.
+2023-09-08 10:53:12,262 [main] DEBUG: edu.cmu.ri.createlab.terk.robot.finch.DefaultFinchController: DefaultFinchController.disconnect(): Now shutting down the HIDCommandExecutionQueue...
+2023-09-08 10:53:12,262 [main] DEBUG: edu.cmu.ri.createlab.usb.hid.HIDCommandExecutionQueue: HIDCommandExecutionQueue.shutdown(): Shutting down the HID device command execution queue
+2023-09-08 10:53:12,262 [main] DEBUG: edu.cmu.ri.createlab.usb.hid.HIDCommandExecutionQueue: HIDCommandExecutionQueue.shutdown(): Unexecuted tasks: 0
+2023-09-08 10:53:12,262 [main] DEBUG: edu.cmu.ri.createlab.usb.hid.HIDCommandExecutionQueue: HIDCommandExecutionQueue.shutdown(): Waiting for the HID device command execution queue to shutdown.
+2023-09-08 10:53:12,262 [main] DEBUG: edu.cmu.ri.createlab.usb.hid.HIDCommandExecutionQueue: HIDCommandExecutionQueue.shutdown(): HID device command execution queue successfully shutdown
+2023-09-08 10:53:12,262 [main] DEBUG: edu.cmu.ri.createlab.usb.hid.HIDCommandExecutionQueue: HIDCommandExecutionQueue.shutdown(): Now attempting to disconnect from the HID device...
+2023-09-08 10:53:12,262 [main] ERROR: edu.cmu.ri.createlab.usb.hid.windows.WinError: WinError.findById(): Failed to find error code [14007], returning UNKNOWN.
+2023-09-08 10:53:12,262 [main] ERROR: edu.cmu.ri.createlab.usb.hid.windows.WindowsHIDDevice: WindowsHIDDevice.disconnect(): Failed to disconnect.  Return was [true] and last error was [WinError{id=-1, name='Unknown: unknown status'}]
+2023-09-08 10:53:12,262 [main] DEBUG: edu.cmu.ri.createlab.usb.hid.HIDCommandExecutionQueue: HIDCommandExecutionQueue.shutdown(): Failed to disconnect from the HID device.
+2023-09-08 10:53:12,262 [main] DEBUG: edu.cmu.ri.createlab.terk.robot.finch.LocalFinchConnectionStrategy: LocalFinchConnectionStrategy.handleConnectionStateChange(): OLD [Connected]  NEW [Disconnected]  port []
+2023-09-08 10:55:25,252 [main] DEBUG: edu.cmu.ri.createlab.terk.application.TerkApplication: TerkApplication.TerkApplication()
+2023-09-08 10:55:25,253 [main] INFO : edu.cmu.ri.createlab.terk.application.TerkApplication: TerkApplication.TerkApplication(): System property [terk-application.connection-strategy.class.name] is not defined.  Attempting to use default [edu.cmu.ri.createlab.terk.robot.finch.LocalFinchConnectionStrategy] implementation class instead.
+2023-09-08 10:55:25,259 [main] DEBUG: edu.cmu.ri.createlab.terk.application.TerkApplication: TerkApplication.TerkApplication(): successfully instantiated ConnectionStrategy implementation class [edu.cmu.ri.createlab.terk.robot.finch.LocalFinchConnectionStrategy]
+2023-09-08 10:55:25,402 [main] DEBUG: edu.cmu.ri.createlab.device.connectivity.BaseCreateLabDeviceConnectivityManager: BaseCreateLabDeviceConnectivityManager: scanAndConnectWorkhorseRunnable.run()
+2023-09-08 10:55:25,402 [main] DEBUG: edu.cmu.ri.createlab.device.connectivity.BaseCreateLabDeviceConnectivityManager: BaseCreateLabDeviceConnectivityManager.disconnect()
+2023-09-08 10:55:25,402 [main] DEBUG: edu.cmu.ri.createlab.terk.robot.finch.LocalFinchConnectionStrategy: LocalFinchConnectionStrategy.handleConnectionStateChange(): OLD [Disconnected]  NEW [Disconnected]  port []
+2023-09-08 10:55:25,404 [BaseCreateLabDeviceConnectivityManager.executorService pool-1-thread-1] DEBUG: edu.cmu.ri.createlab.device.connectivity.BaseCreateLabDeviceConnectivityManager: CreateLabDeviceConnectivityManagerImpl$DeviceScanner.run()
+2023-09-08 10:55:25,404 [BaseCreateLabDeviceConnectivityManager.executorService pool-1-thread-1] DEBUG: edu.cmu.ri.createlab.terk.robot.finch.LocalFinchConnectionStrategy: LocalFinchConnectionStrategy.handleConnectionStateChange(): OLD [Disconnected]  NEW [Scanning]  port []
+2023-09-08 10:55:25,406 [BaseCreateLabDeviceConnectivityManager.executorService pool-1-thread-1] DEBUG: edu.cmu.ri.createlab.terk.robot.finch.DefaultFinchController: DefaultFinchController.create(): creating HID device for vendor ID [2354] and product ID [1111]
+2023-09-08 10:55:25,411 [BaseCreateLabDeviceConnectivityManager.executorService pool-1-thread-1] DEBUG: edu.cmu.ri.createlab.terk.robot.finch.DefaultFinchController: DefaultFinchController.create(): attempting connection...
+2023-09-08 10:55:25,654 [BaseCreateLabDeviceConnectivityManager.executorService pool-1-thread-1] DEBUG: edu.cmu.ri.createlab.usb.hid.windows.WindowsHIDDevice: WindowsHIDDevice.disconnect(): disconnected successfully
+2023-09-08 10:55:25,668 [BaseCreateLabDeviceConnectivityManager.executorService pool-1-thread-1] DEBUG: edu.cmu.ri.createlab.usb.hid.windows.WindowsHIDDevice: WindowsHIDDevice.connect(): connection successful
+2023-09-08 10:55:25,689 [BaseCreateLabDeviceConnectivityManager.executorService pool-1-thread-1] DEBUG: edu.cmu.ri.createlab.device.connectivity.BaseCreateLabDeviceConnectivityManager: CreateLabDeviceConnectivityManagerImpl$DeviceScanner.run(): connection established!
+2023-09-08 10:55:25,690 [BaseCreateLabDeviceConnectivityManager.executorService pool-1-thread-1] DEBUG: edu.cmu.ri.createlab.terk.robot.finch.LocalFinchConnectionStrategy: LocalFinchConnectionStrategy.handleConnectionStateChange(): OLD [Scanning]  NEW [Connected]  port [\\?\hid#vid_2354&pid_1111#6&3752f9b6&0&0000#{4d1e55b2-f16f-11cf-88cb-001111000030}]
+2023-09-08 10:55:25,695 [main] DEBUG: edu.cmu.ri.createlab.terk.robot.finch.services.FinchServiceManager: FinchServiceManager.loadService() needs to load the [::TeRK::AudioController] service
+2023-09-08 10:55:25,695 [main] DEBUG: edu.cmu.ri.createlab.terk.robot.finch.services.FinchServiceFactory: FinchServiceFactory.createService(::TeRK::AudioController)
+2023-09-08 10:55:25,697 [main] DEBUG: edu.cmu.ri.createlab.terk.properties.BasicPropertyManager: ServantPropertyManager.setReadOnlyProperty(device.count,1)
+2023-09-08 10:55:25,697 [main] DEBUG: edu.cmu.ri.createlab.terk.properties.BasicPropertyManager: ServantPropertyManager.setReadOnlyProperty(::TeRK::AudioController::min-amplitude,0)
+2023-09-08 10:55:25,697 [main] DEBUG: edu.cmu.ri.createlab.terk.properties.BasicPropertyManager: ServantPropertyManager.setReadOnlyProperty(::TeRK::AudioController::max-amplitude,10)
+2023-09-08 10:55:25,697 [main] DEBUG: edu.cmu.ri.createlab.terk.properties.BasicPropertyManager: ServantPropertyManager.setReadOnlyProperty(::TeRK::AudioController::min-duration,0)
+2023-09-08 10:55:25,697 [main] DEBUG: edu.cmu.ri.createlab.terk.properties.BasicPropertyManager: ServantPropertyManager.setReadOnlyProperty(::TeRK::AudioController::max-duration,2147483647)
+2023-09-08 10:55:25,697 [main] DEBUG: edu.cmu.ri.createlab.terk.properties.BasicPropertyManager: ServantPropertyManager.setReadOnlyProperty(::TeRK::AudioController::min-frequency,0)
+2023-09-08 10:55:25,697 [main] DEBUG: edu.cmu.ri.createlab.terk.properties.BasicPropertyManager: ServantPropertyManager.setReadOnlyProperty(::TeRK::AudioController::max-frequency,2147483647)
+2023-09-08 10:55:25,698 [main] DEBUG: edu.cmu.ri.createlab.audio.AudioHelper: AudioHelper.playTone(261,10,1000)
+2023-09-08 10:55:26,902 [main] DEBUG: edu.cmu.ri.createlab.audio.AudioHelper: AudioHelper.playTone(294,10,1000)
+2023-09-08 10:55:27,939 [main] DEBUG: edu.cmu.ri.createlab.audio.AudioHelper: AudioHelper.playTone(330,10,1000)
+2023-09-08 10:55:28,986 [main] DEBUG: edu.cmu.ri.createlab.audio.AudioHelper: AudioHelper.playTone(349,10,1000)
+2023-09-08 10:55:30,041 [main] DEBUG: edu.cmu.ri.createlab.audio.AudioHelper: AudioHelper.playTone(392,10,1000)
+2023-09-08 10:55:31,086 [main] DEBUG: edu.cmu.ri.createlab.audio.AudioHelper: AudioHelper.playTone(440,10,1000)
+2023-09-08 10:55:32,137 [main] DEBUG: edu.cmu.ri.createlab.audio.AudioHelper: AudioHelper.playTone(494,10,1000)
+2023-09-08 10:55:33,174 [main] DEBUG: edu.cmu.ri.createlab.audio.AudioHelper: AudioHelper.playTone(523,10,1000)
+2023-09-08 10:55:34,199 [main] DEBUG: edu.cmu.ri.createlab.audio.AudioHelper: AudioHelper.playTone(261,10,1000)
+2023-09-08 10:55:35,263 [main] DEBUG: edu.cmu.ri.createlab.audio.AudioHelper: AudioHelper.playTone(330,10,1000)
+2023-09-08 10:55:36,326 [main] DEBUG: edu.cmu.ri.createlab.audio.AudioHelper: AudioHelper.playTone(392,10,1000)
+2023-09-08 10:55:37,351 [main] DEBUG: edu.cmu.ri.createlab.audio.AudioHelper: AudioHelper.playTone(440,10,1000)
+2023-09-08 10:55:38,400 [main] DEBUG: edu.cmu.ri.createlab.audio.AudioHelper: AudioHelper.playTone(349,10,1000)
+2023-09-08 10:55:39,429 [main] DEBUG: edu.cmu.ri.createlab.audio.AudioHelper: AudioHelper.playTone(294,10,1000)
+2023-09-08 10:55:40,484 [main] DEBUG: edu.cmu.ri.createlab.audio.AudioHelper: AudioHelper.playTone(247,10,1000)
+2023-09-08 10:55:41,523 [main] DEBUG: edu.cmu.ri.createlab.audio.AudioHelper: AudioHelper.playTone(392,10,1000)
+2023-09-08 10:55:42,583 [main] DEBUG: edu.cmu.ri.createlab.audio.AudioHelper: AudioHelper.playTone(261,10,1000)
+2023-09-08 10:55:43,630 [main] DEBUG: edu.cmu.ri.createlab.terk.application.TerkApplication: TerkApplication.shutdown()
+2023-09-08 10:55:43,630 [main] DEBUG: edu.cmu.ri.createlab.terk.application.TerkApplication: TerkApplication$shutdownRunnable.run()
+2023-09-08 10:55:43,631 [main] DEBUG: edu.cmu.ri.createlab.terk.robot.finch.LocalFinchConnectionStrategy: LocalFinchConnectionStrategy.prepareForShutdown()
+2023-09-08 10:55:43,631 [main] DEBUG: edu.cmu.ri.createlab.terk.robot.finch.LocalFinchConnectionStrategy: LocalFinchConnectionStrategy.disconnect()
+2023-09-08 10:55:43,631 [main] DEBUG: edu.cmu.ri.createlab.device.connectivity.BaseCreateLabDeviceConnectivityManager: BaseCreateLabDeviceConnectivityManager.disconnect()
+2023-09-08 10:55:43,631 [main] DEBUG: edu.cmu.ri.createlab.terk.robot.finch.DefaultFinchController: DefaultFinchController.disconnect(): Shutting down finch pinger...
+2023-09-08 10:55:43,631 [main] DEBUG: edu.cmu.ri.createlab.terk.robot.finch.DefaultFinchController: DefaultFinchController.disconnect(): Successfully shut down finch pinger.
+2023-09-08 10:55:43,631 [main] DEBUG: edu.cmu.ri.createlab.terk.robot.finch.DefaultFinchController: DefaultFinchController.disconnect(): Now attempting to send the disconnect command to the finch
+2023-09-08 10:55:43,632 [main] DEBUG: edu.cmu.ri.createlab.terk.robot.finch.DefaultFinchController: DefaultFinchController.disconnect(): Successfully disconnected from the finch.
+2023-09-08 10:55:43,632 [main] DEBUG: edu.cmu.ri.createlab.terk.robot.finch.DefaultFinchController: DefaultFinchController.disconnect(): Now shutting down the HIDCommandExecutionQueue...
+2023-09-08 10:55:43,632 [main] DEBUG: edu.cmu.ri.createlab.usb.hid.HIDCommandExecutionQueue: HIDCommandExecutionQueue.shutdown(): Shutting down the HID device command execution queue
+2023-09-08 10:55:43,632 [main] DEBUG: edu.cmu.ri.createlab.usb.hid.HIDCommandExecutionQueue: HIDCommandExecutionQueue.shutdown(): Unexecuted tasks: 0
+2023-09-08 10:55:43,632 [main] DEBUG: edu.cmu.ri.createlab.usb.hid.HIDCommandExecutionQueue: HIDCommandExecutionQueue.shutdown(): Waiting for the HID device command execution queue to shutdown.
+2023-09-08 10:55:43,632 [main] DEBUG: edu.cmu.ri.createlab.usb.hid.HIDCommandExecutionQueue: HIDCommandExecutionQueue.shutdown(): HID device command execution queue successfully shutdown
+2023-09-08 10:55:43,632 [main] DEBUG: edu.cmu.ri.createlab.usb.hid.HIDCommandExecutionQueue: HIDCommandExecutionQueue.shutdown(): Now attempting to disconnect from the HID device...
+2023-09-08 10:55:43,633 [main] ERROR: edu.cmu.ri.createlab.usb.hid.windows.WinError: WinError.findById(): Failed to find error code [14007], returning UNKNOWN.
+2023-09-08 10:55:43,633 [main] ERROR: edu.cmu.ri.createlab.usb.hid.windows.WindowsHIDDevice: WindowsHIDDevice.disconnect(): Failed to disconnect.  Return was [true] and last error was [WinError{id=-1, name='Unknown: unknown status'}]
+2023-09-08 10:55:43,633 [main] DEBUG: edu.cmu.ri.createlab.usb.hid.HIDCommandExecutionQueue: HIDCommandExecutionQueue.shutdown(): Failed to disconnect from the HID device.
+2023-09-08 10:55:43,633 [main] DEBUG: edu.cmu.ri.createlab.terk.robot.finch.LocalFinchConnectionStrategy: LocalFinchConnectionStrategy.handleConnectionStateChange(): OLD [Connected]  NEW [Disconnected]  port []
+2023-09-08 10:59:39,512 [main] DEBUG: edu.cmu.ri.createlab.terk.application.TerkApplication: TerkApplication.TerkApplication()
+2023-09-08 10:59:39,513 [main] INFO : edu.cmu.ri.createlab.terk.application.TerkApplication: TerkApplication.TerkApplication(): System property [terk-application.connection-strategy.class.name] is not defined.  Attempting to use default [edu.cmu.ri.createlab.terk.robot.finch.LocalFinchConnectionStrategy] implementation class instead.
+2023-09-08 10:59:39,520 [main] DEBUG: edu.cmu.ri.createlab.terk.application.TerkApplication: TerkApplication.TerkApplication(): successfully instantiated ConnectionStrategy implementation class [edu.cmu.ri.createlab.terk.robot.finch.LocalFinchConnectionStrategy]
+2023-09-08 10:59:39,681 [main] DEBUG: edu.cmu.ri.createlab.device.connectivity.BaseCreateLabDeviceConnectivityManager: BaseCreateLabDeviceConnectivityManager: scanAndConnectWorkhorseRunnable.run()
+2023-09-08 10:59:39,681 [main] DEBUG: edu.cmu.ri.createlab.device.connectivity.BaseCreateLabDeviceConnectivityManager: BaseCreateLabDeviceConnectivityManager.disconnect()
+2023-09-08 10:59:39,681 [main] DEBUG: edu.cmu.ri.createlab.terk.robot.finch.LocalFinchConnectionStrategy: LocalFinchConnectionStrategy.handleConnectionStateChange(): OLD [Disconnected]  NEW [Disconnected]  port []
+2023-09-08 10:59:39,683 [BaseCreateLabDeviceConnectivityManager.executorService pool-1-thread-1] DEBUG: edu.cmu.ri.createlab.device.connectivity.BaseCreateLabDeviceConnectivityManager: CreateLabDeviceConnectivityManagerImpl$DeviceScanner.run()
+2023-09-08 10:59:39,684 [BaseCreateLabDeviceConnectivityManager.executorService pool-1-thread-1] DEBUG: edu.cmu.ri.createlab.terk.robot.finch.LocalFinchConnectionStrategy: LocalFinchConnectionStrategy.handleConnectionStateChange(): OLD [Disconnected]  NEW [Scanning]  port []
+2023-09-08 10:59:39,687 [BaseCreateLabDeviceConnectivityManager.executorService pool-1-thread-1] DEBUG: edu.cmu.ri.createlab.terk.robot.finch.DefaultFinchController: DefaultFinchController.create(): creating HID device for vendor ID [2354] and product ID [1111]
+2023-09-08 10:59:39,691 [BaseCreateLabDeviceConnectivityManager.executorService pool-1-thread-1] DEBUG: edu.cmu.ri.createlab.terk.robot.finch.DefaultFinchController: DefaultFinchController.create(): attempting connection...
+2023-09-08 10:59:39,951 [BaseCreateLabDeviceConnectivityManager.executorService pool-1-thread-1] DEBUG: edu.cmu.ri.createlab.usb.hid.windows.WindowsHIDDevice: WindowsHIDDevice.disconnect(): disconnected successfully
+2023-09-08 10:59:39,960 [BaseCreateLabDeviceConnectivityManager.executorService pool-1-thread-1] DEBUG: edu.cmu.ri.createlab.usb.hid.windows.WindowsHIDDevice: WindowsHIDDevice.connect(): connection successful
+2023-09-08 10:59:39,980 [BaseCreateLabDeviceConnectivityManager.executorService pool-1-thread-1] DEBUG: edu.cmu.ri.createlab.device.connectivity.BaseCreateLabDeviceConnectivityManager: CreateLabDeviceConnectivityManagerImpl$DeviceScanner.run(): connection established!
+2023-09-08 10:59:39,981 [BaseCreateLabDeviceConnectivityManager.executorService pool-1-thread-1] DEBUG: edu.cmu.ri.createlab.terk.robot.finch.LocalFinchConnectionStrategy: LocalFinchConnectionStrategy.handleConnectionStateChange(): OLD [Scanning]  NEW [Connected]  port [\\?\hid#vid_2354&pid_1111#6&3752f9b6&0&0000#{4d1e55b2-f16f-11cf-88cb-001111000030}]
+2023-09-08 10:59:39,987 [main] DEBUG: edu.cmu.ri.createlab.terk.robot.finch.services.FinchServiceManager: FinchServiceManager.loadService() needs to load the [::TeRK::AudioController] service
+2023-09-08 10:59:39,987 [main] DEBUG: edu.cmu.ri.createlab.terk.robot.finch.services.FinchServiceFactory: FinchServiceFactory.createService(::TeRK::AudioController)
+2023-09-08 10:59:39,989 [main] DEBUG: edu.cmu.ri.createlab.terk.properties.BasicPropertyManager: ServantPropertyManager.setReadOnlyProperty(device.count,1)
+2023-09-08 10:59:39,989 [main] DEBUG: edu.cmu.ri.createlab.terk.properties.BasicPropertyManager: ServantPropertyManager.setReadOnlyProperty(::TeRK::AudioController::min-amplitude,0)
+2023-09-08 10:59:39,989 [main] DEBUG: edu.cmu.ri.createlab.terk.properties.BasicPropertyManager: ServantPropertyManager.setReadOnlyProperty(::TeRK::AudioController::max-amplitude,10)
+2023-09-08 10:59:39,989 [main] DEBUG: edu.cmu.ri.createlab.terk.properties.BasicPropertyManager: ServantPropertyManager.setReadOnlyProperty(::TeRK::AudioController::min-duration,0)
+2023-09-08 10:59:39,989 [main] DEBUG: edu.cmu.ri.createlab.terk.properties.BasicPropertyManager: ServantPropertyManager.setReadOnlyProperty(::TeRK::AudioController::max-duration,2147483647)
+2023-09-08 10:59:39,989 [main] DEBUG: edu.cmu.ri.createlab.terk.properties.BasicPropertyManager: ServantPropertyManager.setReadOnlyProperty(::TeRK::AudioController::min-frequency,0)
+2023-09-08 10:59:39,989 [main] DEBUG: edu.cmu.ri.createlab.terk.properties.BasicPropertyManager: ServantPropertyManager.setReadOnlyProperty(::TeRK::AudioController::max-frequency,2147483647)
+2023-09-08 10:59:39,990 [main] DEBUG: edu.cmu.ri.createlab.audio.AudioHelper: AudioHelper.playTone(261,10,1000)
+2023-09-08 10:59:41,176 [main] DEBUG: edu.cmu.ri.createlab.audio.AudioHelper: AudioHelper.playTone(294,10,1000)
+2023-09-08 10:59:42,201 [main] DEBUG: edu.cmu.ri.createlab.audio.AudioHelper: AudioHelper.playTone(330,10,1000)
+2023-09-08 10:59:43,229 [main] DEBUG: edu.cmu.ri.createlab.audio.AudioHelper: AudioHelper.playTone(349,10,1000)
+2023-09-08 10:59:44,283 [main] DEBUG: edu.cmu.ri.createlab.audio.AudioHelper: AudioHelper.playTone(392,10,1000)
+2023-09-08 10:59:45,324 [main] DEBUG: edu.cmu.ri.createlab.audio.AudioHelper: AudioHelper.playTone(440,10,1000)
+2023-09-08 10:59:46,365 [main] DEBUG: edu.cmu.ri.createlab.audio.AudioHelper: AudioHelper.playTone(494,10,1000)
+2023-09-08 10:59:47,399 [main] DEBUG: edu.cmu.ri.createlab.audio.AudioHelper: AudioHelper.playTone(523,10,1000)
+2023-09-08 10:59:48,432 [main] DEBUG: edu.cmu.ri.createlab.audio.AudioHelper: AudioHelper.playTone(261,10,1000)
+2023-09-08 10:59:49,471 [main] DEBUG: edu.cmu.ri.createlab.audio.AudioHelper: AudioHelper.playTone(330,10,1000)
+2023-09-08 10:59:50,523 [main] DEBUG: edu.cmu.ri.createlab.audio.AudioHelper: AudioHelper.playTone(392,10,1000)
+2023-09-08 10:59:51,561 [main] DEBUG: edu.cmu.ri.createlab.audio.AudioHelper: AudioHelper.playTone(440,10,1000)
+2023-09-08 10:59:52,604 [main] DEBUG: edu.cmu.ri.createlab.audio.AudioHelper: AudioHelper.playTone(349,10,1000)
+2023-09-08 10:59:53,639 [main] DEBUG: edu.cmu.ri.createlab.audio.AudioHelper: AudioHelper.playTone(294,10,1000)
+2023-09-08 10:59:54,690 [main] DEBUG: edu.cmu.ri.createlab.audio.AudioHelper: AudioHelper.playTone(247,10,1000)
+2023-09-08 10:59:55,727 [main] DEBUG: edu.cmu.ri.createlab.audio.AudioHelper: AudioHelper.playTone(392,10,1000)
+2023-09-08 10:59:56,764 [main] DEBUG: edu.cmu.ri.createlab.audio.AudioHelper: AudioHelper.playTone(261,10,1000)
+2023-09-08 10:59:57,791 [main] DEBUG: edu.cmu.ri.createlab.audio.AudioHelper: AudioHelper.playTone(659,10,500)
+2023-09-08 10:59:58,378 [main] DEBUG: edu.cmu.ri.createlab.audio.AudioHelper: AudioHelper.playTone(622,10,500)
+2023-09-08 10:59:58,954 [main] DEBUG: edu.cmu.ri.createlab.audio.AudioHelper: AudioHelper.playTone(659,10,500)
+2023-09-08 10:59:59,573 [main] DEBUG: edu.cmu.ri.createlab.audio.AudioHelper: AudioHelper.playTone(622,10,500)
+2023-09-08 11:00:00,210 [main] DEBUG: edu.cmu.ri.createlab.audio.AudioHelper: AudioHelper.playTone(659,10,500)
+2023-09-08 11:00:00,806 [main] DEBUG: edu.cmu.ri.createlab.audio.AudioHelper: AudioHelper.playTone(494,10,500)
+2023-09-08 11:00:01,377 [main] DEBUG: edu.cmu.ri.createlab.audio.AudioHelper: AudioHelper.playTone(587,10,500)
+2023-09-08 11:00:01,954 [main] DEBUG: edu.cmu.ri.createlab.audio.AudioHelper: AudioHelper.playTone(523,10,500)
+2023-09-08 11:00:02,541 [main] DEBUG: edu.cmu.ri.createlab.audio.AudioHelper: AudioHelper.playTone(440,10,1000)
+2023-09-08 11:00:03,584 [main] DEBUG: edu.cmu.ri.createlab.terk.application.TerkApplication: TerkApplication.shutdown()
+2023-09-08 11:00:03,584 [main] DEBUG: edu.cmu.ri.createlab.terk.application.TerkApplication: TerkApplication$shutdownRunnable.run()
+2023-09-08 11:00:03,584 [main] DEBUG: edu.cmu.ri.createlab.terk.robot.finch.LocalFinchConnectionStrategy: LocalFinchConnectionStrategy.prepareForShutdown()
+2023-09-08 11:00:03,584 [main] DEBUG: edu.cmu.ri.createlab.terk.robot.finch.LocalFinchConnectionStrategy: LocalFinchConnectionStrategy.disconnect()
+2023-09-08 11:00:03,584 [main] DEBUG: edu.cmu.ri.createlab.device.connectivity.BaseCreateLabDeviceConnectivityManager: BaseCreateLabDeviceConnectivityManager.disconnect()
+2023-09-08 11:00:03,584 [main] DEBUG: edu.cmu.ri.createlab.terk.robot.finch.DefaultFinchController: DefaultFinchController.disconnect(): Shutting down finch pinger...
+2023-09-08 11:00:03,584 [main] DEBUG: edu.cmu.ri.createlab.terk.robot.finch.DefaultFinchController: DefaultFinchController.disconnect(): Successfully shut down finch pinger.
+2023-09-08 11:00:03,584 [main] DEBUG: edu.cmu.ri.createlab.terk.robot.finch.DefaultFinchController: DefaultFinchController.disconnect(): Now attempting to send the disconnect command to the finch
+2023-09-08 11:00:03,588 [main] DEBUG: edu.cmu.ri.createlab.terk.robot.finch.DefaultFinchController: DefaultFinchController.disconnect(): Successfully disconnected from the finch.
+2023-09-08 11:00:03,588 [main] DEBUG: edu.cmu.ri.createlab.terk.robot.finch.DefaultFinchController: DefaultFinchController.disconnect(): Now shutting down the HIDCommandExecutionQueue...
+2023-09-08 11:00:03,588 [main] DEBUG: edu.cmu.ri.createlab.usb.hid.HIDCommandExecutionQueue: HIDCommandExecutionQueue.shutdown(): Shutting down the HID device command execution queue
+2023-09-08 11:00:03,589 [main] DEBUG: edu.cmu.ri.createlab.usb.hid.HIDCommandExecutionQueue: HIDCommandExecutionQueue.shutdown(): Unexecuted tasks: 0
+2023-09-08 11:00:03,589 [main] DEBUG: edu.cmu.ri.createlab.usb.hid.HIDCommandExecutionQueue: HIDCommandExecutionQueue.shutdown(): Waiting for the HID device command execution queue to shutdown.
+2023-09-08 11:00:03,589 [main] DEBUG: edu.cmu.ri.createlab.usb.hid.HIDCommandExecutionQueue: HIDCommandExecutionQueue.shutdown(): HID device command execution queue successfully shutdown
+2023-09-08 11:00:03,589 [main] DEBUG: edu.cmu.ri.createlab.usb.hid.HIDCommandExecutionQueue: HIDCommandExecutionQueue.shutdown(): Now attempting to disconnect from the HID device...
+2023-09-08 11:00:03,589 [main] ERROR: edu.cmu.ri.createlab.usb.hid.windows.WinError: WinError.findById(): Failed to find error code [14007], returning UNKNOWN.
+2023-09-08 11:00:03,590 [main] ERROR: edu.cmu.ri.createlab.usb.hid.windows.WindowsHIDDevice: WindowsHIDDevice.disconnect(): Failed to disconnect.  Return was [true] and last error was [WinError{id=-1, name='Unknown: unknown status'}]
+2023-09-08 11:00:03,590 [main] DEBUG: edu.cmu.ri.createlab.usb.hid.HIDCommandExecutionQueue: HIDCommandExecutionQueue.shutdown(): Failed to disconnect from the HID device.
+2023-09-08 11:00:03,590 [main] DEBUG: edu.cmu.ri.createlab.terk.robot.finch.LocalFinchConnectionStrategy: LocalFinchConnectionStrategy.handleConnectionStateChange(): OLD [Connected]  NEW [Disconnected]  port []
+2023-09-08 11:12:43,067 [main] DEBUG: edu.cmu.ri.createlab.terk.application.TerkApplication: TerkApplication.TerkApplication()
+2023-09-08 11:12:43,068 [main] INFO : edu.cmu.ri.createlab.terk.application.TerkApplication: TerkApplication.TerkApplication(): System property [terk-application.connection-strategy.class.name] is not defined.  Attempting to use default [edu.cmu.ri.createlab.terk.robot.finch.LocalFinchConnectionStrategy] implementation class instead.
+2023-09-08 11:12:43,076 [main] DEBUG: edu.cmu.ri.createlab.terk.application.TerkApplication: TerkApplication.TerkApplication(): successfully instantiated ConnectionStrategy implementation class [edu.cmu.ri.createlab.terk.robot.finch.LocalFinchConnectionStrategy]
+2023-09-08 11:12:43,803 [main] DEBUG: edu.cmu.ri.createlab.device.connectivity.BaseCreateLabDeviceConnectivityManager: BaseCreateLabDeviceConnectivityManager: scanAndConnectWorkhorseRunnable.run()
+2023-09-08 11:12:43,803 [main] DEBUG: edu.cmu.ri.createlab.device.connectivity.BaseCreateLabDeviceConnectivityManager: BaseCreateLabDeviceConnectivityManager.disconnect()
+2023-09-08 11:12:43,803 [main] DEBUG: edu.cmu.ri.createlab.terk.robot.finch.LocalFinchConnectionStrategy: LocalFinchConnectionStrategy.handleConnectionStateChange(): OLD [Disconnected]  NEW [Disconnected]  port []
+2023-09-08 11:12:43,805 [BaseCreateLabDeviceConnectivityManager.executorService pool-1-thread-1] DEBUG: edu.cmu.ri.createlab.device.connectivity.BaseCreateLabDeviceConnectivityManager: CreateLabDeviceConnectivityManagerImpl$DeviceScanner.run()
+2023-09-08 11:12:43,805 [BaseCreateLabDeviceConnectivityManager.executorService pool-1-thread-1] DEBUG: edu.cmu.ri.createlab.terk.robot.finch.LocalFinchConnectionStrategy: LocalFinchConnectionStrategy.handleConnectionStateChange(): OLD [Disconnected]  NEW [Scanning]  port []
+2023-09-08 11:12:43,808 [BaseCreateLabDeviceConnectivityManager.executorService pool-1-thread-1] DEBUG: edu.cmu.ri.createlab.terk.robot.finch.DefaultFinchController: DefaultFinchController.create(): creating HID device for vendor ID [2354] and product ID [1111]
+2023-09-08 11:12:43,812 [BaseCreateLabDeviceConnectivityManager.executorService pool-1-thread-1] DEBUG: edu.cmu.ri.createlab.terk.robot.finch.DefaultFinchController: DefaultFinchController.create(): attempting connection...
+2023-09-08 11:12:44,072 [BaseCreateLabDeviceConnectivityManager.executorService pool-1-thread-1] DEBUG: edu.cmu.ri.createlab.usb.hid.windows.WindowsHIDDevice: WindowsHIDDevice.disconnect(): disconnected successfully
+2023-09-08 11:12:44,078 [BaseCreateLabDeviceConnectivityManager.executorService pool-1-thread-1] DEBUG: edu.cmu.ri.createlab.usb.hid.windows.WindowsHIDDevice: WindowsHIDDevice.connect(): connection successful
+2023-09-08 11:12:44,092 [BaseCreateLabDeviceConnectivityManager.executorService pool-1-thread-1] DEBUG: edu.cmu.ri.createlab.device.connectivity.BaseCreateLabDeviceConnectivityManager: CreateLabDeviceConnectivityManagerImpl$DeviceScanner.run(): connection established!
+2023-09-08 11:12:44,093 [BaseCreateLabDeviceConnectivityManager.executorService pool-1-thread-1] DEBUG: edu.cmu.ri.createlab.terk.robot.finch.LocalFinchConnectionStrategy: LocalFinchConnectionStrategy.handleConnectionStateChange(): OLD [Scanning]  NEW [Connected]  port [\\?\hid#vid_2354&pid_1111#6&3752f9b6&0&0000#{4d1e55b2-f16f-11cf-88cb-001111000030}]
+2023-09-08 11:12:44,096 [main] DEBUG: edu.cmu.ri.createlab.terk.robot.finch.services.FinchServiceManager: FinchServiceManager.loadService() needs to load the [::TeRK::AudioController] service
+2023-09-08 11:12:44,097 [main] DEBUG: edu.cmu.ri.createlab.terk.robot.finch.services.FinchServiceFactory: FinchServiceFactory.createService(::TeRK::AudioController)
+2023-09-08 11:12:44,098 [main] DEBUG: edu.cmu.ri.createlab.terk.properties.BasicPropertyManager: ServantPropertyManager.setReadOnlyProperty(device.count,1)
+2023-09-08 11:12:44,098 [main] DEBUG: edu.cmu.ri.createlab.terk.properties.BasicPropertyManager: ServantPropertyManager.setReadOnlyProperty(::TeRK::AudioController::min-amplitude,0)
+2023-09-08 11:12:44,098 [main] DEBUG: edu.cmu.ri.createlab.terk.properties.BasicPropertyManager: ServantPropertyManager.setReadOnlyProperty(::TeRK::AudioController::max-amplitude,10)
+2023-09-08 11:12:44,099 [main] DEBUG: edu.cmu.ri.createlab.terk.properties.BasicPropertyManager: ServantPropertyManager.setReadOnlyProperty(::TeRK::AudioController::min-duration,0)
+2023-09-08 11:12:44,099 [main] DEBUG: edu.cmu.ri.createlab.terk.properties.BasicPropertyManager: ServantPropertyManager.setReadOnlyProperty(::TeRK::AudioController::max-duration,2147483647)
+2023-09-08 11:12:44,099 [main] DEBUG: edu.cmu.ri.createlab.terk.properties.BasicPropertyManager: ServantPropertyManager.setReadOnlyProperty(::TeRK::AudioController::min-frequency,0)
+2023-09-08 11:12:44,099 [main] DEBUG: edu.cmu.ri.createlab.terk.properties.BasicPropertyManager: ServantPropertyManager.setReadOnlyProperty(::TeRK::AudioController::max-frequency,2147483647)
+2023-09-08 11:12:44,100 [main] DEBUG: edu.cmu.ri.createlab.audio.AudioHelper: AudioHelper.playTone(261,10,1000)
+2023-09-08 11:12:46,076 [main] DEBUG: edu.cmu.ri.createlab.audio.AudioHelper: AudioHelper.playTone(294,10,1000)
+2023-09-08 11:12:47,125 [main] DEBUG: edu.cmu.ri.createlab.audio.AudioHelper: AudioHelper.playTone(330,10,1000)
+2023-09-08 11:12:48,175 [main] DEBUG: edu.cmu.ri.createlab.audio.AudioHelper: AudioHelper.playTone(349,10,1000)
+2023-09-08 11:12:49,206 [main] DEBUG: edu.cmu.ri.createlab.audio.AudioHelper: AudioHelper.playTone(392,10,1000)
+2023-09-08 11:12:50,238 [main] DEBUG: edu.cmu.ri.createlab.audio.AudioHelper: AudioHelper.playTone(440,10,1000)
+2023-09-08 11:12:51,320 [main] DEBUG: edu.cmu.ri.createlab.audio.AudioHelper: AudioHelper.playTone(494,10,1000)
+2023-09-08 11:12:52,403 [main] DEBUG: edu.cmu.ri.createlab.audio.AudioHelper: AudioHelper.playTone(523,10,1000)
+2023-09-08 11:12:53,441 [main] DEBUG: edu.cmu.ri.createlab.audio.AudioHelper: AudioHelper.playTone(261,10,1000)
+2023-09-08 11:12:54,469 [main] DEBUG: edu.cmu.ri.createlab.audio.AudioHelper: AudioHelper.playTone(330,10,1000)
+2023-09-08 11:12:55,500 [main] DEBUG: edu.cmu.ri.createlab.audio.AudioHelper: AudioHelper.playTone(392,10,1000)
+2023-09-08 11:12:56,543 [main] DEBUG: edu.cmu.ri.createlab.audio.AudioHelper: AudioHelper.playTone(440,10,1000)
+2023-09-08 11:12:57,579 [main] DEBUG: edu.cmu.ri.createlab.audio.AudioHelper: AudioHelper.playTone(349,10,1000)
+2023-09-08 11:12:58,624 [main] DEBUG: edu.cmu.ri.createlab.audio.AudioHelper: AudioHelper.playTone(294,10,1000)
+2023-09-08 11:12:59,672 [main] DEBUG: edu.cmu.ri.createlab.audio.AudioHelper: AudioHelper.playTone(247,10,1000)
+2023-09-08 11:13:00,719 [main] DEBUG: edu.cmu.ri.createlab.audio.AudioHelper: AudioHelper.playTone(392,10,1000)
+2023-09-08 11:13:01,769 [main] DEBUG: edu.cmu.ri.createlab.audio.AudioHelper: AudioHelper.playTone(261,10,1000)
+2023-09-08 11:13:02,792 [main] DEBUG: edu.cmu.ri.createlab.audio.AudioHelper: AudioHelper.playTone(659,10,500)
+2023-09-08 11:13:03,366 [main] DEBUG: edu.cmu.ri.createlab.audio.AudioHelper: AudioHelper.playTone(622,10,500)
+2023-09-08 11:13:03,941 [main] DEBUG: edu.cmu.ri.createlab.audio.AudioHelper: AudioHelper.playTone(659,10,500)
+2023-09-08 11:13:04,512 [main] DEBUG: edu.cmu.ri.createlab.audio.AudioHelper: AudioHelper.playTone(622,10,500)
+2023-09-08 11:13:05,085 [main] DEBUG: edu.cmu.ri.createlab.audio.AudioHelper: AudioHelper.playTone(659,10,500)
+2023-09-08 11:13:05,656 [main] DEBUG: edu.cmu.ri.createlab.audio.AudioHelper: AudioHelper.playTone(494,10,500)
+2023-09-08 11:13:06,227 [main] DEBUG: edu.cmu.ri.createlab.audio.AudioHelper: AudioHelper.playTone(587,10,500)
+2023-09-08 11:13:06,802 [main] DEBUG: edu.cmu.ri.createlab.audio.AudioHelper: AudioHelper.playTone(523,10,500)
+2023-09-08 11:13:07,388 [main] DEBUG: edu.cmu.ri.createlab.audio.AudioHelper: AudioHelper.playTone(440,10,1000)
+2023-09-08 11:13:08,414 [main] DEBUG: edu.cmu.ri.createlab.audio.AudioHelper: AudioHelper.playTone(587,10,500)
+2023-09-08 11:13:08,985 [main] DEBUG: edu.cmu.ri.createlab.audio.AudioHelper: AudioHelper.playTone(659,10,500)
+2023-09-08 11:13:09,556 [main] DEBUG: edu.cmu.ri.createlab.audio.AudioHelper: AudioHelper.playTone(587,10,500)
+2023-09-08 11:13:10,117 [main] DEBUG: edu.cmu.ri.createlab.audio.AudioHelper: AudioHelper.playTone(494,10,500)
+2023-09-08 11:13:10,683 [main] DEBUG: edu.cmu.ri.createlab.audio.AudioHelper: AudioHelper.playTone(554,10,500)
+2023-09-08 11:13:11,251 [main] DEBUG: edu.cmu.ri.createlab.audio.AudioHelper: AudioHelper.playTone(466,10,500)
+2023-09-08 11:13:11,825 [main] DEBUG: edu.cmu.ri.createlab.audio.AudioHelper: AudioHelper.playTone(523,10,500)
+2023-09-08 11:13:12,416 [main] DEBUG: edu.cmu.ri.createlab.audio.AudioHelper: AudioHelper.playTone(440,10,500)
+2023-09-08 11:13:12,987 [main] DEBUG: edu.cmu.ri.createlab.audio.AudioHelper: AudioHelper.playTone(587,10,500)
+2023-09-08 11:13:13,553 [main] DEBUG: edu.cmu.ri.createlab.audio.AudioHelper: AudioHelper.playTone(554,10,500)
+2023-09-08 11:13:14,117 [main] DEBUG: edu.cmu.ri.createlab.audio.AudioHelper: AudioHelper.playTone(587,10,500)
+2023-09-08 11:13:14,703 [main] DEBUG: edu.cmu.ri.createlab.audio.AudioHelper: AudioHelper.playTone(494,10,500)
+2023-09-08 11:13:15,276 [main] DEBUG: edu.cmu.ri.createlab.audio.AudioHelper: AudioHelper.playTone(554,10,500)
+2023-09-08 11:13:15,862 [main] DEBUG: edu.cmu.ri.createlab.audio.AudioHelper: AudioHelper.playTone(466,10,500)
+2023-09-08 11:13:16,428 [main] DEBUG: edu.cmu.ri.createlab.audio.AudioHelper: AudioHelper.playTone(554,10,500)
+2023-09-08 11:13:17,002 [main] DEBUG: edu.cmu.ri.createlab.audio.AudioHelper: AudioHelper.playTone(440,10,500)
+2023-09-08 11:13:17,575 [main] DEBUG: edu.cmu.ri.createlab.audio.AudioHelper: AudioHelper.playTone(784,10,500)
+2023-09-08 11:13:18,148 [main] DEBUG: edu.cmu.ri.createlab.audio.AudioHelper: AudioHelper.playTone(740,10,500)
+2023-09-08 11:13:18,724 [main] DEBUG: edu.cmu.ri.createlab.audio.AudioHelper: AudioHelper.playTone(784,10,500)
+2023-09-08 11:13:19,324 [main] DEBUG: edu.cmu.ri.createlab.audio.AudioHelper: AudioHelper.playTone(659,10,500)
+2023-09-08 11:13:19,916 [main] DEBUG: edu.cmu.ri.createlab.audio.AudioHelper: AudioHelper.playTone(740,10,500)
+2023-09-08 11:13:20,487 [main] DEBUG: edu.cmu.ri.createlab.audio.AudioHelper: AudioHelper.playTone(622,10,500)
+2023-09-08 11:13:21,073 [main] DEBUG: edu.cmu.ri.createlab.audio.AudioHelper: AudioHelper.playTone(698,10,500)
+2023-09-08 11:13:21,675 [main] DEBUG: edu.cmu.ri.createlab.audio.AudioHelper: AudioHelper.playTone(587,10,500)
+2023-09-08 11:13:22,256 [main] DEBUG: edu.cmu.ri.createlab.audio.AudioHelper: AudioHelper.playTone(784,10,500)
+2023-09-08 11:13:22,828 [main] DEBUG: edu.cmu.ri.createlab.audio.AudioHelper: AudioHelper.playTone(740,10,500)
+2023-09-08 11:13:23,421 [main] DEBUG: edu.cmu.ri.createlab.audio.AudioHelper: AudioHelper.playTone(784,10,1000)
+2023-09-08 11:13:24,461 [main] DEBUG: edu.cmu.ri.createlab.audio.AudioHelper: AudioHelper.playTone(622,10,500)
+2023-09-08 11:13:25,041 [main] DEBUG: edu.cmu.ri.createlab.audio.AudioHelper: AudioHelper.playTone(740,10,500)
+2023-09-08 11:13:25,605 [main] DEBUG: edu.cmu.ri.createlab.audio.AudioHelper: AudioHelper.playTone(587,10,500)
+2023-09-08 11:13:26,178 [main] DEBUG: edu.cmu.ri.createlab.audio.AudioHelper: AudioHelper.playTone(440,10,500)
+2023-09-08 11:13:26,740 [main] DEBUG: edu.cmu.ri.createlab.audio.AudioHelper: AudioHelper.playTone(440,10,500)
+2023-09-08 11:13:27,313 [main] DEBUG: edu.cmu.ri.createlab.audio.AudioHelper: AudioHelper.playTone(740,10,750)
+2023-09-08 11:13:28,154 [main] DEBUG: edu.cmu.ri.createlab.terk.application.TerkApplication: TerkApplication.shutdown()
+2023-09-08 11:13:28,154 [main] DEBUG: edu.cmu.ri.createlab.terk.application.TerkApplication: TerkApplication$shutdownRunnable.run()
+2023-09-08 11:13:28,154 [main] DEBUG: edu.cmu.ri.createlab.terk.robot.finch.LocalFinchConnectionStrategy: LocalFinchConnectionStrategy.prepareForShutdown()
+2023-09-08 11:13:28,154 [main] DEBUG: edu.cmu.ri.createlab.terk.robot.finch.LocalFinchConnectionStrategy: LocalFinchConnectionStrategy.disconnect()
+2023-09-08 11:13:28,154 [main] DEBUG: edu.cmu.ri.createlab.device.connectivity.BaseCreateLabDeviceConnectivityManager: BaseCreateLabDeviceConnectivityManager.disconnect()
+2023-09-08 11:13:28,154 [main] DEBUG: edu.cmu.ri.createlab.terk.robot.finch.DefaultFinchController: DefaultFinchController.disconnect(): Shutting down finch pinger...
+2023-09-08 11:13:28,155 [main] DEBUG: edu.cmu.ri.createlab.terk.robot.finch.DefaultFinchController: DefaultFinchController.disconnect(): Successfully shut down finch pinger.
+2023-09-08 11:13:28,155 [main] DEBUG: edu.cmu.ri.createlab.terk.robot.finch.DefaultFinchController: DefaultFinchController.disconnect(): Now attempting to send the disconnect command to the finch
+2023-09-08 11:13:28,164 [main] DEBUG: edu.cmu.ri.createlab.terk.robot.finch.DefaultFinchController: DefaultFinchController.disconnect(): Successfully disconnected from the finch.
+2023-09-08 11:13:28,164 [main] DEBUG: edu.cmu.ri.createlab.terk.robot.finch.DefaultFinchController: DefaultFinchController.disconnect(): Now shutting down the HIDCommandExecutionQueue...
+2023-09-08 11:13:28,164 [main] DEBUG: edu.cmu.ri.createlab.usb.hid.HIDCommandExecutionQueue: HIDCommandExecutionQueue.shutdown(): Shutting down the HID device command execution queue
+2023-09-08 11:13:28,164 [main] DEBUG: edu.cmu.ri.createlab.usb.hid.HIDCommandExecutionQueue: HIDCommandExecutionQueue.shutdown(): Unexecuted tasks: 0
+2023-09-08 11:13:28,165 [main] DEBUG: edu.cmu.ri.createlab.usb.hid.HIDCommandExecutionQueue: HIDCommandExecutionQueue.shutdown(): Waiting for the HID device command execution queue to shutdown.
+2023-09-08 11:13:28,165 [main] DEBUG: edu.cmu.ri.createlab.usb.hid.HIDCommandExecutionQueue: HIDCommandExecutionQueue.shutdown(): HID device command execution queue successfully shutdown
+2023-09-08 11:13:28,165 [main] DEBUG: edu.cmu.ri.createlab.usb.hid.HIDCommandExecutionQueue: HIDCommandExecutionQueue.shutdown(): Now attempting to disconnect from the HID device...
+2023-09-08 11:13:28,165 [main] ERROR: edu.cmu.ri.createlab.usb.hid.windows.WinError: WinError.findById(): Failed to find error code [14007], returning UNKNOWN.
+2023-09-08 11:13:28,165 [main] ERROR: edu.cmu.ri.createlab.usb.hid.windows.WindowsHIDDevice: WindowsHIDDevice.disconnect(): Failed to disconnect.  Return was [true] and last error was [WinError{id=-1, name='Unknown: unknown status'}]
+2023-09-08 11:13:28,165 [main] DEBUG: edu.cmu.ri.createlab.usb.hid.HIDCommandExecutionQueue: HIDCommandExecutionQueue.shutdown(): Failed to disconnect from the HID device.
+2023-09-08 11:13:28,165 [main] DEBUG: edu.cmu.ri.createlab.terk.robot.finch.LocalFinchConnectionStrategy: LocalFinchConnectionStrategy.handleConnectionStateChange(): OLD [Connected]  NEW [Disconnected]  port []
+2023-09-08 11:13:38,941 [main] DEBUG: edu.cmu.ri.createlab.terk.application.TerkApplication: TerkApplication.TerkApplication()
+2023-09-08 11:13:38,943 [main] INFO : edu.cmu.ri.createlab.terk.application.TerkApplication: TerkApplication.TerkApplication(): System property [terk-application.connection-strategy.class.name] is not defined.  Attempting to use default [edu.cmu.ri.createlab.terk.robot.finch.LocalFinchConnectionStrategy] implementation class instead.
+2023-09-08 11:13:38,953 [main] DEBUG: edu.cmu.ri.createlab.terk.application.TerkApplication: TerkApplication.TerkApplication(): successfully instantiated ConnectionStrategy implementation class [edu.cmu.ri.createlab.terk.robot.finch.LocalFinchConnectionStrategy]
+2023-09-08 11:13:39,111 [main] DEBUG: edu.cmu.ri.createlab.device.connectivity.BaseCreateLabDeviceConnectivityManager: BaseCreateLabDeviceConnectivityManager: scanAndConnectWorkhorseRunnable.run()
+2023-09-08 11:13:39,112 [main] DEBUG: edu.cmu.ri.createlab.device.connectivity.BaseCreateLabDeviceConnectivityManager: BaseCreateLabDeviceConnectivityManager.disconnect()
+2023-09-08 11:13:39,112 [main] DEBUG: edu.cmu.ri.createlab.terk.robot.finch.LocalFinchConnectionStrategy: LocalFinchConnectionStrategy.handleConnectionStateChange(): OLD [Disconnected]  NEW [Disconnected]  port []
+2023-09-08 11:13:39,114 [BaseCreateLabDeviceConnectivityManager.executorService pool-1-thread-1] DEBUG: edu.cmu.ri.createlab.device.connectivity.BaseCreateLabDeviceConnectivityManager: CreateLabDeviceConnectivityManagerImpl$DeviceScanner.run()
+2023-09-08 11:13:39,114 [BaseCreateLabDeviceConnectivityManager.executorService pool-1-thread-1] DEBUG: edu.cmu.ri.createlab.terk.robot.finch.LocalFinchConnectionStrategy: LocalFinchConnectionStrategy.handleConnectionStateChange(): OLD [Disconnected]  NEW [Scanning]  port []
+2023-09-08 11:13:39,117 [BaseCreateLabDeviceConnectivityManager.executorService pool-1-thread-1] DEBUG: edu.cmu.ri.createlab.terk.robot.finch.DefaultFinchController: DefaultFinchController.create(): creating HID device for vendor ID [2354] and product ID [1111]
+2023-09-08 11:13:39,121 [BaseCreateLabDeviceConnectivityManager.executorService pool-1-thread-1] DEBUG: edu.cmu.ri.createlab.terk.robot.finch.DefaultFinchController: DefaultFinchController.create(): attempting connection...
+2023-09-08 11:13:39,347 [BaseCreateLabDeviceConnectivityManager.executorService pool-1-thread-1] DEBUG: edu.cmu.ri.createlab.usb.hid.windows.WindowsHIDDevice: WindowsHIDDevice.disconnect(): disconnected successfully
+2023-09-08 11:13:39,351 [BaseCreateLabDeviceConnectivityManager.executorService pool-1-thread-1] DEBUG: edu.cmu.ri.createlab.usb.hid.windows.WindowsHIDDevice: WindowsHIDDevice.connect(): connection successful
+2023-09-08 11:13:39,364 [BaseCreateLabDeviceConnectivityManager.executorService pool-1-thread-1] DEBUG: edu.cmu.ri.createlab.device.connectivity.BaseCreateLabDeviceConnectivityManager: CreateLabDeviceConnectivityManagerImpl$DeviceScanner.run(): connection established!
+2023-09-08 11:13:39,364 [BaseCreateLabDeviceConnectivityManager.executorService pool-1-thread-1] DEBUG: edu.cmu.ri.createlab.terk.robot.finch.LocalFinchConnectionStrategy: LocalFinchConnectionStrategy.handleConnectionStateChange(): OLD [Scanning]  NEW [Connected]  port [\\?\hid#vid_2354&pid_1111#6&3752f9b6&0&0000#{4d1e55b2-f16f-11cf-88cb-001111000030}]
+2023-09-08 11:13:39,368 [main] DEBUG: edu.cmu.ri.createlab.terk.robot.finch.services.FinchServiceManager: FinchServiceManager.loadService() needs to load the [::TeRK::AudioController] service
+2023-09-08 11:13:39,368 [main] DEBUG: edu.cmu.ri.createlab.terk.robot.finch.services.FinchServiceFactory: FinchServiceFactory.createService(::TeRK::AudioController)
+2023-09-08 11:13:39,370 [main] DEBUG: edu.cmu.ri.createlab.terk.properties.BasicPropertyManager: ServantPropertyManager.setReadOnlyProperty(device.count,1)
+2023-09-08 11:13:39,371 [main] DEBUG: edu.cmu.ri.createlab.terk.properties.BasicPropertyManager: ServantPropertyManager.setReadOnlyProperty(::TeRK::AudioController::min-amplitude,0)
+2023-09-08 11:13:39,371 [main] DEBUG: edu.cmu.ri.createlab.terk.properties.BasicPropertyManager: ServantPropertyManager.setReadOnlyProperty(::TeRK::AudioController::max-amplitude,10)
+2023-09-08 11:13:39,371 [main] DEBUG: edu.cmu.ri.createlab.terk.properties.BasicPropertyManager: ServantPropertyManager.setReadOnlyProperty(::TeRK::AudioController::min-duration,0)
+2023-09-08 11:13:39,371 [main] DEBUG: edu.cmu.ri.createlab.terk.properties.BasicPropertyManager: ServantPropertyManager.setReadOnlyProperty(::TeRK::AudioController::max-duration,2147483647)
+2023-09-08 11:13:39,371 [main] DEBUG: edu.cmu.ri.createlab.terk.properties.BasicPropertyManager: ServantPropertyManager.setReadOnlyProperty(::TeRK::AudioController::min-frequency,0)
+2023-09-08 11:13:39,371 [main] DEBUG: edu.cmu.ri.createlab.terk.properties.BasicPropertyManager: ServantPropertyManager.setReadOnlyProperty(::TeRK::AudioController::max-frequency,2147483647)
+2023-09-08 11:13:39,372 [main] DEBUG: edu.cmu.ri.createlab.audio.AudioHelper: AudioHelper.playTone(261,10,1000)
+2023-09-08 11:13:40,584 [main] DEBUG: edu.cmu.ri.createlab.audio.AudioHelper: AudioHelper.playTone(294,10,1000)
+2023-09-08 11:13:41,619 [main] DEBUG: edu.cmu.ri.createlab.audio.AudioHelper: AudioHelper.playTone(330,10,1000)
+2023-09-08 11:13:42,651 [main] DEBUG: edu.cmu.ri.createlab.audio.AudioHelper: AudioHelper.playTone(349,10,1000)
+2023-09-08 11:13:43,678 [main] DEBUG: edu.cmu.ri.createlab.audio.AudioHelper: AudioHelper.playTone(392,10,1000)
+2023-09-08 11:13:44,709 [main] DEBUG: edu.cmu.ri.createlab.audio.AudioHelper: AudioHelper.playTone(440,10,1000)
+2023-09-08 11:13:45,738 [main] DEBUG: edu.cmu.ri.createlab.audio.AudioHelper: AudioHelper.playTone(494,10,1000)
+2023-09-08 11:13:46,769 [main] DEBUG: edu.cmu.ri.createlab.audio.AudioHelper: AudioHelper.playTone(523,10,1000)
+2023-09-08 11:13:47,808 [main] DEBUG: edu.cmu.ri.createlab.audio.AudioHelper: AudioHelper.playTone(261,10,1000)
+2023-09-08 11:13:48,832 [main] DEBUG: edu.cmu.ri.createlab.audio.AudioHelper: AudioHelper.playTone(330,10,1000)
+2023-09-08 11:13:49,859 [main] DEBUG: edu.cmu.ri.createlab.audio.AudioHelper: AudioHelper.playTone(392,10,1000)
+2023-09-08 11:13:50,904 [main] DEBUG: edu.cmu.ri.createlab.audio.AudioHelper: AudioHelper.playTone(440,10,1000)
+2023-09-08 11:13:51,946 [main] DEBUG: edu.cmu.ri.createlab.audio.AudioHelper: AudioHelper.playTone(349,10,1000)
+2023-09-08 11:13:52,980 [main] DEBUG: edu.cmu.ri.createlab.audio.AudioHelper: AudioHelper.playTone(294,10,1000)
+2023-09-08 11:13:54,011 [main] DEBUG: edu.cmu.ri.createlab.audio.AudioHelper: AudioHelper.playTone(247,10,1000)
+2023-09-08 11:13:55,037 [main] DEBUG: edu.cmu.ri.createlab.audio.AudioHelper: AudioHelper.playTone(392,10,1000)
+2023-09-08 11:13:56,096 [main] DEBUG: edu.cmu.ri.createlab.audio.AudioHelper: AudioHelper.playTone(261,10,1000)
+2023-09-08 11:13:57,140 [main] DEBUG: edu.cmu.ri.createlab.audio.AudioHelper: AudioHelper.playTone(659,10,500)
+2023-09-08 11:13:57,717 [main] DEBUG: edu.cmu.ri.createlab.audio.AudioHelper: AudioHelper.playTone(622,10,500)
+2023-09-08 11:13:58,293 [main] DEBUG: edu.cmu.ri.createlab.audio.AudioHelper: AudioHelper.playTone(659,10,500)
+2023-09-08 11:13:58,860 [main] DEBUG: edu.cmu.ri.createlab.audio.AudioHelper: AudioHelper.playTone(622,10,500)
+2023-09-08 11:13:59,445 [main] DEBUG: edu.cmu.ri.createlab.audio.AudioHelper: AudioHelper.playTone(659,10,500)
+2023-09-08 11:14:00,017 [main] DEBUG: edu.cmu.ri.createlab.audio.AudioHelper: AudioHelper.playTone(494,10,500)
+2023-09-08 11:14:00,582 [main] DEBUG: edu.cmu.ri.createlab.audio.AudioHelper: AudioHelper.playTone(587,10,500)
+2023-09-08 11:14:01,161 [main] DEBUG: edu.cmu.ri.createlab.audio.AudioHelper: AudioHelper.playTone(523,10,500)
+2023-09-08 11:14:01,751 [main] DEBUG: edu.cmu.ri.createlab.audio.AudioHelper: AudioHelper.playTone(440,10,1000)
+2023-09-08 11:14:02,785 [main] DEBUG: edu.cmu.ri.createlab.audio.AudioHelper: AudioHelper.playTone(587,10,500)
+2023-09-08 11:14:03,353 [main] DEBUG: edu.cmu.ri.createlab.audio.AudioHelper: AudioHelper.playTone(659,10,500)
+2023-09-08 11:14:03,926 [main] DEBUG: edu.cmu.ri.createlab.audio.AudioHelper: AudioHelper.playTone(587,10,500)
+2023-09-08 11:14:04,515 [main] DEBUG: edu.cmu.ri.createlab.audio.AudioHelper: AudioHelper.playTone(494,10,500)
+2023-09-08 11:14:05,092 [main] DEBUG: edu.cmu.ri.createlab.audio.AudioHelper: AudioHelper.playTone(554,10,500)
+2023-09-08 11:14:05,670 [main] DEBUG: edu.cmu.ri.createlab.audio.AudioHelper: AudioHelper.playTone(466,10,500)
+2023-09-08 11:14:06,244 [main] DEBUG: edu.cmu.ri.createlab.audio.AudioHelper: AudioHelper.playTone(523,10,500)
+2023-09-08 11:14:06,826 [main] DEBUG: edu.cmu.ri.createlab.audio.AudioHelper: AudioHelper.playTone(440,10,500)
+2023-09-08 11:14:07,397 [main] DEBUG: edu.cmu.ri.createlab.audio.AudioHelper: AudioHelper.playTone(587,10,500)
+2023-09-08 11:14:07,962 [main] DEBUG: edu.cmu.ri.createlab.audio.AudioHelper: AudioHelper.playTone(554,10,500)
+2023-09-08 11:14:08,545 [main] DEBUG: edu.cmu.ri.createlab.audio.AudioHelper: AudioHelper.playTone(587,10,500)
+2023-09-08 11:14:09,110 [main] DEBUG: edu.cmu.ri.createlab.audio.AudioHelper: AudioHelper.playTone(494,10,500)
+2023-09-08 11:14:09,676 [main] DEBUG: edu.cmu.ri.createlab.audio.AudioHelper: AudioHelper.playTone(554,10,500)
+2023-09-08 11:14:10,251 [main] DEBUG: edu.cmu.ri.createlab.audio.AudioHelper: AudioHelper.playTone(466,10,500)
+2023-09-08 11:14:10,817 [main] DEBUG: edu.cmu.ri.createlab.audio.AudioHelper: AudioHelper.playTone(554,10,500)
+2023-09-08 11:14:11,381 [main] DEBUG: edu.cmu.ri.createlab.audio.AudioHelper: AudioHelper.playTone(440,10,500)
+2023-09-08 11:14:11,944 [main] DEBUG: edu.cmu.ri.createlab.audio.AudioHelper: AudioHelper.playTone(784,10,500)
+2023-09-08 11:14:12,530 [main] DEBUG: edu.cmu.ri.createlab.audio.AudioHelper: AudioHelper.playTone(740,10,500)
+2023-09-08 11:14:13,103 [main] DEBUG: edu.cmu.ri.createlab.audio.AudioHelper: AudioHelper.playTone(784,10,500)
+2023-09-08 11:14:13,670 [main] DEBUG: edu.cmu.ri.createlab.audio.AudioHelper: AudioHelper.playTone(659,10,500)
+2023-09-08 11:14:14,234 [main] DEBUG: edu.cmu.ri.createlab.audio.AudioHelper: AudioHelper.playTone(740,10,500)
+2023-09-08 11:14:14,807 [main] DEBUG: edu.cmu.ri.createlab.audio.AudioHelper: AudioHelper.playTone(622,10,500)
+2023-09-08 11:14:15,371 [main] DEBUG: edu.cmu.ri.createlab.audio.AudioHelper: AudioHelper.playTone(698,10,500)
+2023-09-08 11:14:15,941 [main] DEBUG: edu.cmu.ri.createlab.audio.AudioHelper: AudioHelper.playTone(587,10,500)
+2023-09-08 11:14:16,511 [main] DEBUG: edu.cmu.ri.createlab.audio.AudioHelper: AudioHelper.playTone(784,10,500)
+2023-09-08 11:14:17,102 [main] DEBUG: edu.cmu.ri.createlab.audio.AudioHelper: AudioHelper.playTone(740,10,500)
+2023-09-08 11:14:17,687 [main] DEBUG: edu.cmu.ri.createlab.audio.AudioHelper: AudioHelper.playTone(784,10,1000)
+2023-09-08 11:14:18,714 [main] DEBUG: edu.cmu.ri.createlab.audio.AudioHelper: AudioHelper.playTone(622,10,500)
+2023-09-08 11:14:19,289 [main] DEBUG: edu.cmu.ri.createlab.audio.AudioHelper: AudioHelper.playTone(740,10,500)
+2023-09-08 11:14:19,872 [main] DEBUG: edu.cmu.ri.createlab.audio.AudioHelper: AudioHelper.playTone(587,10,500)
+2023-09-08 11:14:20,444 [main] DEBUG: edu.cmu.ri.createlab.audio.AudioHelper: AudioHelper.playTone(440,10,500)
+2023-09-08 11:14:21,007 [main] DEBUG: edu.cmu.ri.createlab.audio.AudioHelper: AudioHelper.playTone(440,10,500)
+2023-09-08 11:14:21,574 [main] DEBUG: edu.cmu.ri.createlab.audio.AudioHelper: AudioHelper.playTone(740,10,750)
+2023-09-08 11:14:22,417 [main] DEBUG: edu.cmu.ri.createlab.terk.application.TerkApplication: TerkApplication.shutdown()
+2023-09-08 11:14:22,417 [main] DEBUG: edu.cmu.ri.createlab.terk.application.TerkApplication: TerkApplication$shutdownRunnable.run()
+2023-09-08 11:14:22,417 [main] DEBUG: edu.cmu.ri.createlab.terk.robot.finch.LocalFinchConnectionStrategy: LocalFinchConnectionStrategy.prepareForShutdown()
+2023-09-08 11:14:22,417 [main] DEBUG: edu.cmu.ri.createlab.terk.robot.finch.LocalFinchConnectionStrategy: LocalFinchConnectionStrategy.disconnect()
+2023-09-08 11:14:22,417 [main] DEBUG: edu.cmu.ri.createlab.device.connectivity.BaseCreateLabDeviceConnectivityManager: BaseCreateLabDeviceConnectivityManager.disconnect()
+2023-09-08 11:14:22,417 [main] DEBUG: edu.cmu.ri.createlab.terk.robot.finch.DefaultFinchController: DefaultFinchController.disconnect(): Shutting down finch pinger...
+2023-09-08 11:14:22,418 [main] DEBUG: edu.cmu.ri.createlab.terk.robot.finch.DefaultFinchController: DefaultFinchController.disconnect(): Successfully shut down finch pinger.
+2023-09-08 11:14:22,418 [main] DEBUG: edu.cmu.ri.createlab.terk.robot.finch.DefaultFinchController: DefaultFinchController.disconnect(): Now attempting to send the disconnect command to the finch
+2023-09-08 11:14:22,422 [main] DEBUG: edu.cmu.ri.createlab.terk.robot.finch.DefaultFinchController: DefaultFinchController.disconnect(): Successfully disconnected from the finch.
+2023-09-08 11:14:22,422 [main] DEBUG: edu.cmu.ri.createlab.terk.robot.finch.DefaultFinchController: DefaultFinchController.disconnect(): Now shutting down the HIDCommandExecutionQueue...
+2023-09-08 11:14:22,422 [main] DEBUG: edu.cmu.ri.createlab.usb.hid.HIDCommandExecutionQueue: HIDCommandExecutionQueue.shutdown(): Shutting down the HID device command execution queue
+2023-09-08 11:14:22,422 [main] DEBUG: edu.cmu.ri.createlab.usb.hid.HIDCommandExecutionQueue: HIDCommandExecutionQueue.shutdown(): Unexecuted tasks: 0
+2023-09-08 11:14:22,422 [main] DEBUG: edu.cmu.ri.createlab.usb.hid.HIDCommandExecutionQueue: HIDCommandExecutionQueue.shutdown(): Waiting for the HID device command execution queue to shutdown.
+2023-09-08 11:14:22,422 [main] DEBUG: edu.cmu.ri.createlab.usb.hid.HIDCommandExecutionQueue: HIDCommandExecutionQueue.shutdown(): HID device command execution queue successfully shutdown
+2023-09-08 11:14:22,422 [main] DEBUG: edu.cmu.ri.createlab.usb.hid.HIDCommandExecutionQueue: HIDCommandExecutionQueue.shutdown(): Now attempting to disconnect from the HID device...
+2023-09-08 11:14:22,422 [main] ERROR: edu.cmu.ri.createlab.usb.hid.windows.WinError: WinError.findById(): Failed to find error code [14007], returning UNKNOWN.
+2023-09-08 11:14:22,422 [main] ERROR: edu.cmu.ri.createlab.usb.hid.windows.WindowsHIDDevice: WindowsHIDDevice.disconnect(): Failed to disconnect.  Return was [true] and last error was [WinError{id=-1, name='Unknown: unknown status'}]
+2023-09-08 11:14:22,422 [main] DEBUG: edu.cmu.ri.createlab.usb.hid.HIDCommandExecutionQueue: HIDCommandExecutionQueue.shutdown(): Failed to disconnect from the HID device.
+2023-09-08 11:14:22,422 [main] DEBUG: edu.cmu.ri.createlab.terk.robot.finch.LocalFinchConnectionStrategy: LocalFinchConnectionStrategy.handleConnectionStateChange(): OLD [Connected]  NEW [Disconnected]  port []
+2023-09-08 11:14:44,807 [main] DEBUG: edu.cmu.ri.createlab.terk.application.TerkApplication: TerkApplication.TerkApplication()
+2023-09-08 11:14:44,808 [main] INFO : edu.cmu.ri.createlab.terk.application.TerkApplication: TerkApplication.TerkApplication(): System property [terk-application.connection-strategy.class.name] is not defined.  Attempting to use default [edu.cmu.ri.createlab.terk.robot.finch.LocalFinchConnectionStrategy] implementation class instead.
+2023-09-08 11:14:44,814 [main] DEBUG: edu.cmu.ri.createlab.terk.application.TerkApplication: TerkApplication.TerkApplication(): successfully instantiated ConnectionStrategy implementation class [edu.cmu.ri.createlab.terk.robot.finch.LocalFinchConnectionStrategy]
+2023-09-08 11:14:44,961 [main] DEBUG: edu.cmu.ri.createlab.device.connectivity.BaseCreateLabDeviceConnectivityManager: BaseCreateLabDeviceConnectivityManager: scanAndConnectWorkhorseRunnable.run()
+2023-09-08 11:14:44,961 [main] DEBUG: edu.cmu.ri.createlab.device.connectivity.BaseCreateLabDeviceConnectivityManager: BaseCreateLabDeviceConnectivityManager.disconnect()
+2023-09-08 11:14:44,961 [main] DEBUG: edu.cmu.ri.createlab.terk.robot.finch.LocalFinchConnectionStrategy: LocalFinchConnectionStrategy.handleConnectionStateChange(): OLD [Disconnected]  NEW [Disconnected]  port []
+2023-09-08 11:14:44,963 [BaseCreateLabDeviceConnectivityManager.executorService pool-1-thread-1] DEBUG: edu.cmu.ri.createlab.device.connectivity.BaseCreateLabDeviceConnectivityManager: CreateLabDeviceConnectivityManagerImpl$DeviceScanner.run()
+2023-09-08 11:14:44,963 [BaseCreateLabDeviceConnectivityManager.executorService pool-1-thread-1] DEBUG: edu.cmu.ri.createlab.terk.robot.finch.LocalFinchConnectionStrategy: LocalFinchConnectionStrategy.handleConnectionStateChange(): OLD [Disconnected]  NEW [Scanning]  port []
+2023-09-08 11:14:44,966 [BaseCreateLabDeviceConnectivityManager.executorService pool-1-thread-1] DEBUG: edu.cmu.ri.createlab.terk.robot.finch.DefaultFinchController: DefaultFinchController.create(): creating HID device for vendor ID [2354] and product ID [1111]
+2023-09-08 11:14:44,970 [BaseCreateLabDeviceConnectivityManager.executorService pool-1-thread-1] DEBUG: edu.cmu.ri.createlab.terk.robot.finch.DefaultFinchController: DefaultFinchController.create(): attempting connection...
+2023-09-08 11:14:45,217 [BaseCreateLabDeviceConnectivityManager.executorService pool-1-thread-1] DEBUG: edu.cmu.ri.createlab.usb.hid.windows.WindowsHIDDevice: WindowsHIDDevice.disconnect(): disconnected successfully
+2023-09-08 11:14:45,230 [BaseCreateLabDeviceConnectivityManager.executorService pool-1-thread-1] DEBUG: edu.cmu.ri.createlab.usb.hid.windows.WindowsHIDDevice: WindowsHIDDevice.connect(): connection successful
+2023-09-08 11:14:45,256 [BaseCreateLabDeviceConnectivityManager.executorService pool-1-thread-1] DEBUG: edu.cmu.ri.createlab.device.connectivity.BaseCreateLabDeviceConnectivityManager: CreateLabDeviceConnectivityManagerImpl$DeviceScanner.run(): connection established!
+2023-09-08 11:14:45,256 [BaseCreateLabDeviceConnectivityManager.executorService pool-1-thread-1] DEBUG: edu.cmu.ri.createlab.terk.robot.finch.LocalFinchConnectionStrategy: LocalFinchConnectionStrategy.handleConnectionStateChange(): OLD [Scanning]  NEW [Connected]  port [\\?\hid#vid_2354&pid_1111#6&3752f9b6&0&0000#{4d1e55b2-f16f-11cf-88cb-001111000030}]
+2023-09-08 11:14:45,262 [main] DEBUG: edu.cmu.ri.createlab.terk.robot.finch.services.FinchServiceManager: FinchServiceManager.loadService() needs to load the [::TeRK::AudioController] service
+2023-09-08 11:14:45,262 [main] DEBUG: edu.cmu.ri.createlab.terk.robot.finch.services.FinchServiceFactory: FinchServiceFactory.createService(::TeRK::AudioController)
+2023-09-08 11:14:45,264 [main] DEBUG: edu.cmu.ri.createlab.terk.properties.BasicPropertyManager: ServantPropertyManager.setReadOnlyProperty(device.count,1)
+2023-09-08 11:14:45,264 [main] DEBUG: edu.cmu.ri.createlab.terk.properties.BasicPropertyManager: ServantPropertyManager.setReadOnlyProperty(::TeRK::AudioController::min-amplitude,0)
+2023-09-08 11:14:45,265 [main] DEBUG: edu.cmu.ri.createlab.terk.properties.BasicPropertyManager: ServantPropertyManager.setReadOnlyProperty(::TeRK::AudioController::max-amplitude,10)
+2023-09-08 11:14:45,265 [main] DEBUG: edu.cmu.ri.createlab.terk.properties.BasicPropertyManager: ServantPropertyManager.setReadOnlyProperty(::TeRK::AudioController::min-duration,0)
+2023-09-08 11:14:45,265 [main] DEBUG: edu.cmu.ri.createlab.terk.properties.BasicPropertyManager: ServantPropertyManager.setReadOnlyProperty(::TeRK::AudioController::max-duration,2147483647)
+2023-09-08 11:14:45,265 [main] DEBUG: edu.cmu.ri.createlab.terk.properties.BasicPropertyManager: ServantPropertyManager.setReadOnlyProperty(::TeRK::AudioController::min-frequency,0)
+2023-09-08 11:14:45,265 [main] DEBUG: edu.cmu.ri.createlab.terk.properties.BasicPropertyManager: ServantPropertyManager.setReadOnlyProperty(::TeRK::AudioController::max-frequency,2147483647)
+2023-09-08 11:14:45,265 [main] DEBUG: edu.cmu.ri.createlab.audio.AudioHelper: AudioHelper.playTone(261,10,1000)
+2023-09-08 11:14:46,444 [main] DEBUG: edu.cmu.ri.createlab.audio.AudioHelper: AudioHelper.playTone(294,10,1000)
+2023-09-08 11:14:47,483 [main] DEBUG: edu.cmu.ri.createlab.audio.AudioHelper: AudioHelper.playTone(330,10,1000)
+2023-09-08 11:14:48,535 [main] DEBUG: edu.cmu.ri.createlab.audio.AudioHelper: AudioHelper.playTone(349,10,1000)
+2023-09-08 11:14:49,571 [main] DEBUG: edu.cmu.ri.createlab.audio.AudioHelper: AudioHelper.playTone(392,10,1000)
+2023-09-08 11:14:50,617 [main] DEBUG: edu.cmu.ri.createlab.audio.AudioHelper: AudioHelper.playTone(440,10,1000)
+2023-09-08 11:14:51,658 [main] DEBUG: edu.cmu.ri.createlab.audio.AudioHelper: AudioHelper.playTone(494,10,1000)
+2023-09-08 11:14:52,685 [main] DEBUG: edu.cmu.ri.createlab.audio.AudioHelper: AudioHelper.playTone(523,10,1000)
+2023-09-08 11:14:53,722 [main] DEBUG: edu.cmu.ri.createlab.audio.AudioHelper: AudioHelper.playTone(261,10,1000)
+2023-09-08 11:14:54,756 [main] DEBUG: edu.cmu.ri.createlab.audio.AudioHelper: AudioHelper.playTone(330,10,1000)
+2023-09-08 11:14:55,804 [main] DEBUG: edu.cmu.ri.createlab.audio.AudioHelper: AudioHelper.playTone(392,10,1000)
+2023-09-08 11:14:56,839 [main] DEBUG: edu.cmu.ri.createlab.audio.AudioHelper: AudioHelper.playTone(440,10,1000)
+2023-09-08 11:14:57,882 [main] DEBUG: edu.cmu.ri.createlab.audio.AudioHelper: AudioHelper.playTone(349,10,1000)
+2023-09-08 11:14:58,916 [main] DEBUG: edu.cmu.ri.createlab.audio.AudioHelper: AudioHelper.playTone(294,10,1000)
+2023-09-08 11:14:59,959 [main] DEBUG: edu.cmu.ri.createlab.audio.AudioHelper: AudioHelper.playTone(247,10,1000)
+2023-09-08 11:15:00,981 [main] DEBUG: edu.cmu.ri.createlab.audio.AudioHelper: AudioHelper.playTone(392,10,1000)
+2023-09-08 11:15:02,040 [main] DEBUG: edu.cmu.ri.createlab.audio.AudioHelper: AudioHelper.playTone(261,10,1000)
+2023-09-08 11:15:03,064 [main] DEBUG: edu.cmu.ri.createlab.audio.AudioHelper: AudioHelper.playTone(659,10,500)
+2023-09-08 11:15:03,629 [main] DEBUG: edu.cmu.ri.createlab.audio.AudioHelper: AudioHelper.playTone(622,10,500)
+2023-09-08 11:15:04,208 [main] DEBUG: edu.cmu.ri.createlab.audio.AudioHelper: AudioHelper.playTone(659,10,500)
+2023-09-08 11:15:04,787 [main] DEBUG: edu.cmu.ri.createlab.audio.AudioHelper: AudioHelper.playTone(622,10,500)
+2023-09-08 11:15:05,370 [main] DEBUG: edu.cmu.ri.createlab.audio.AudioHelper: AudioHelper.playTone(659,10,500)
+2023-09-08 11:15:05,943 [main] DEBUG: edu.cmu.ri.createlab.audio.AudioHelper: AudioHelper.playTone(494,10,500)
+2023-09-08 11:15:06,507 [main] DEBUG: edu.cmu.ri.createlab.audio.AudioHelper: AudioHelper.playTone(587,10,500)
+2023-09-08 11:15:07,087 [main] DEBUG: edu.cmu.ri.createlab.audio.AudioHelper: AudioHelper.playTone(523,10,500)
+2023-09-08 11:15:07,663 [main] DEBUG: edu.cmu.ri.createlab.audio.AudioHelper: AudioHelper.playTone(440,10,1000)
+2023-09-08 11:15:08,697 [main] DEBUG: edu.cmu.ri.createlab.audio.AudioHelper: AudioHelper.playTone(587,10,500)
+2023-09-08 11:15:09,282 [main] DEBUG: edu.cmu.ri.createlab.audio.AudioHelper: AudioHelper.playTone(659,10,500)
+2023-09-08 11:15:09,877 [main] DEBUG: edu.cmu.ri.createlab.audio.AudioHelper: AudioHelper.playTone(587,10,500)
+2023-09-08 11:15:10,450 [main] DEBUG: edu.cmu.ri.createlab.audio.AudioHelper: AudioHelper.playTone(494,10,500)
+2023-09-08 11:15:11,014 [main] DEBUG: edu.cmu.ri.createlab.audio.AudioHelper: AudioHelper.playTone(554,10,500)
+2023-09-08 11:15:11,590 [main] DEBUG: edu.cmu.ri.createlab.audio.AudioHelper: AudioHelper.playTone(466,10,500)
+2023-09-08 11:15:12,158 [main] DEBUG: edu.cmu.ri.createlab.audio.AudioHelper: AudioHelper.playTone(523,10,500)
+2023-09-08 11:15:12,732 [main] DEBUG: edu.cmu.ri.createlab.audio.AudioHelper: AudioHelper.playTone(440,10,500)
+2023-09-08 11:15:13,308 [main] DEBUG: edu.cmu.ri.createlab.audio.AudioHelper: AudioHelper.playTone(587,10,500)
+2023-09-08 11:15:13,881 [main] DEBUG: edu.cmu.ri.createlab.audio.AudioHelper: AudioHelper.playTone(554,10,500)
+2023-09-08 11:15:14,459 [main] DEBUG: edu.cmu.ri.createlab.audio.AudioHelper: AudioHelper.playTone(587,10,500)
+2023-09-08 11:15:15,029 [main] DEBUG: edu.cmu.ri.createlab.audio.AudioHelper: AudioHelper.playTone(494,10,500)
+2023-09-08 11:15:15,593 [main] DEBUG: edu.cmu.ri.createlab.audio.AudioHelper: AudioHelper.playTone(554,10,500)
+2023-09-08 11:15:16,168 [main] DEBUG: edu.cmu.ri.createlab.audio.AudioHelper: AudioHelper.playTone(466,10,500)
+2023-09-08 11:15:16,742 [main] DEBUG: edu.cmu.ri.createlab.audio.AudioHelper: AudioHelper.playTone(554,10,500)
+2023-09-08 11:15:17,328 [main] DEBUG: edu.cmu.ri.createlab.audio.AudioHelper: AudioHelper.playTone(440,10,500)
+2023-09-08 11:15:17,903 [main] DEBUG: edu.cmu.ri.createlab.audio.AudioHelper: AudioHelper.playTone(784,10,500)
+2023-09-08 11:15:18,477 [main] DEBUG: edu.cmu.ri.createlab.audio.AudioHelper: AudioHelper.playTone(740,10,500)
+2023-09-08 11:15:19,038 [main] DEBUG: edu.cmu.ri.createlab.audio.AudioHelper: AudioHelper.playTone(784,10,500)
+2023-09-08 11:15:19,603 [main] DEBUG: edu.cmu.ri.createlab.audio.AudioHelper: AudioHelper.playTone(659,10,500)
+2023-09-08 11:15:20,179 [main] DEBUG: edu.cmu.ri.createlab.audio.AudioHelper: AudioHelper.playTone(740,10,500)
+2023-09-08 11:15:20,760 [main] DEBUG: edu.cmu.ri.createlab.audio.AudioHelper: AudioHelper.playTone(622,10,500)
+2023-09-08 11:15:21,344 [main] DEBUG: edu.cmu.ri.createlab.audio.AudioHelper: AudioHelper.playTone(698,10,500)
+2023-09-08 11:15:21,908 [main] DEBUG: edu.cmu.ri.createlab.audio.AudioHelper: AudioHelper.playTone(587,10,500)
+2023-09-08 11:15:22,503 [main] DEBUG: edu.cmu.ri.createlab.audio.AudioHelper: AudioHelper.playTone(784,10,500)
+2023-09-08 11:15:23,090 [main] DEBUG: edu.cmu.ri.createlab.audio.AudioHelper: AudioHelper.playTone(740,10,500)
+2023-09-08 11:15:23,668 [main] DEBUG: edu.cmu.ri.createlab.audio.AudioHelper: AudioHelper.playTone(784,10,1000)
+2023-09-08 11:15:24,704 [main] DEBUG: edu.cmu.ri.createlab.audio.AudioHelper: AudioHelper.playTone(622,10,500)
+2023-09-08 11:15:25,289 [main] DEBUG: edu.cmu.ri.createlab.audio.AudioHelper: AudioHelper.playTone(740,10,500)
+2023-09-08 11:15:25,870 [main] DEBUG: edu.cmu.ri.createlab.audio.AudioHelper: AudioHelper.playTone(587,10,500)
+2023-09-08 11:15:26,447 [main] DEBUG: edu.cmu.ri.createlab.audio.AudioHelper: AudioHelper.playTone(440,10,500)
+2023-09-08 11:15:27,039 [main] DEBUG: edu.cmu.ri.createlab.audio.AudioHelper: AudioHelper.playTone(440,10,500)
+2023-09-08 11:15:27,610 [main] DEBUG: edu.cmu.ri.createlab.audio.AudioHelper: AudioHelper.playTone(740,10,750)
+2023-09-08 11:15:28,466 [main] DEBUG: edu.cmu.ri.createlab.terk.application.TerkApplication: TerkApplication.shutdown()
+2023-09-08 11:15:28,466 [main] DEBUG: edu.cmu.ri.createlab.terk.application.TerkApplication: TerkApplication$shutdownRunnable.run()
+2023-09-08 11:15:28,466 [main] DEBUG: edu.cmu.ri.createlab.terk.robot.finch.LocalFinchConnectionStrategy: LocalFinchConnectionStrategy.prepareForShutdown()
+2023-09-08 11:15:28,466 [main] DEBUG: edu.cmu.ri.createlab.terk.robot.finch.LocalFinchConnectionStrategy: LocalFinchConnectionStrategy.disconnect()
+2023-09-08 11:15:28,466 [main] DEBUG: edu.cmu.ri.createlab.device.connectivity.BaseCreateLabDeviceConnectivityManager: BaseCreateLabDeviceConnectivityManager.disconnect()
+2023-09-08 11:15:28,466 [main] DEBUG: edu.cmu.ri.createlab.terk.robot.finch.DefaultFinchController: DefaultFinchController.disconnect(): Shutting down finch pinger...
+2023-09-08 11:15:28,466 [main] DEBUG: edu.cmu.ri.createlab.terk.robot.finch.DefaultFinchController: DefaultFinchController.disconnect(): Successfully shut down finch pinger.
+2023-09-08 11:15:28,466 [main] DEBUG: edu.cmu.ri.createlab.terk.robot.finch.DefaultFinchController: DefaultFinchController.disconnect(): Now attempting to send the disconnect command to the finch
+2023-09-08 11:15:28,472 [main] DEBUG: edu.cmu.ri.createlab.terk.robot.finch.DefaultFinchController: DefaultFinchController.disconnect(): Successfully disconnected from the finch.
+2023-09-08 11:15:28,473 [main] DEBUG: edu.cmu.ri.createlab.terk.robot.finch.DefaultFinchController: DefaultFinchController.disconnect(): Now shutting down the HIDCommandExecutionQueue...
+2023-09-08 11:15:28,473 [main] DEBUG: edu.cmu.ri.createlab.usb.hid.HIDCommandExecutionQueue: HIDCommandExecutionQueue.shutdown(): Shutting down the HID device command execution queue
+2023-09-08 11:15:28,473 [main] DEBUG: edu.cmu.ri.createlab.usb.hid.HIDCommandExecutionQueue: HIDCommandExecutionQueue.shutdown(): Unexecuted tasks: 0
+2023-09-08 11:15:28,473 [main] DEBUG: edu.cmu.ri.createlab.usb.hid.HIDCommandExecutionQueue: HIDCommandExecutionQueue.shutdown(): Waiting for the HID device command execution queue to shutdown.
+2023-09-08 11:15:28,473 [main] DEBUG: edu.cmu.ri.createlab.usb.hid.HIDCommandExecutionQueue: HIDCommandExecutionQueue.shutdown(): HID device command execution queue successfully shutdown
+2023-09-08 11:15:28,473 [main] DEBUG: edu.cmu.ri.createlab.usb.hid.HIDCommandExecutionQueue: HIDCommandExecutionQueue.shutdown(): Now attempting to disconnect from the HID device...
+2023-09-08 11:15:28,473 [main] ERROR: edu.cmu.ri.createlab.usb.hid.windows.WinError: WinError.findById(): Failed to find error code [14007], returning UNKNOWN.
+2023-09-08 11:15:28,473 [main] ERROR: edu.cmu.ri.createlab.usb.hid.windows.WindowsHIDDevice: WindowsHIDDevice.disconnect(): Failed to disconnect.  Return was [true] and last error was [WinError{id=-1, name='Unknown: unknown status'}]
+2023-09-08 11:15:28,473 [main] DEBUG: edu.cmu.ri.createlab.usb.hid.HIDCommandExecutionQueue: HIDCommandExecutionQueue.shutdown(): Failed to disconnect from the HID device.
+2023-09-08 11:15:28,473 [main] DEBUG: edu.cmu.ri.createlab.terk.robot.finch.LocalFinchConnectionStrategy: LocalFinchConnectionStrategy.handleConnectionStateChange(): OLD [Connected]  NEW [Disconnected]  port []
+2023-09-08 11:31:10,942 [main] DEBUG: edu.cmu.ri.createlab.terk.application.TerkApplication: TerkApplication.TerkApplication()
+2023-09-08 11:31:10,943 [main] INFO : edu.cmu.ri.createlab.terk.application.TerkApplication: TerkApplication.TerkApplication(): System property [terk-application.connection-strategy.class.name] is not defined.  Attempting to use default [edu.cmu.ri.createlab.terk.robot.finch.LocalFinchConnectionStrategy] implementation class instead.
+2023-09-08 11:31:10,949 [main] DEBUG: edu.cmu.ri.createlab.terk.application.TerkApplication: TerkApplication.TerkApplication(): successfully instantiated ConnectionStrategy implementation class [edu.cmu.ri.createlab.terk.robot.finch.LocalFinchConnectionStrategy]
+2023-09-08 11:31:11,095 [main] DEBUG: edu.cmu.ri.createlab.device.connectivity.BaseCreateLabDeviceConnectivityManager: BaseCreateLabDeviceConnectivityManager: scanAndConnectWorkhorseRunnable.run()
+2023-09-08 11:31:11,095 [main] DEBUG: edu.cmu.ri.createlab.device.connectivity.BaseCreateLabDeviceConnectivityManager: BaseCreateLabDeviceConnectivityManager.disconnect()
+2023-09-08 11:31:11,095 [main] DEBUG: edu.cmu.ri.createlab.terk.robot.finch.LocalFinchConnectionStrategy: LocalFinchConnectionStrategy.handleConnectionStateChange(): OLD [Disconnected]  NEW [Disconnected]  port []
+2023-09-08 11:31:11,097 [BaseCreateLabDeviceConnectivityManager.executorService pool-1-thread-1] DEBUG: edu.cmu.ri.createlab.device.connectivity.BaseCreateLabDeviceConnectivityManager: CreateLabDeviceConnectivityManagerImpl$DeviceScanner.run()
+2023-09-08 11:31:11,097 [BaseCreateLabDeviceConnectivityManager.executorService pool-1-thread-1] DEBUG: edu.cmu.ri.createlab.terk.robot.finch.LocalFinchConnectionStrategy: LocalFinchConnectionStrategy.handleConnectionStateChange(): OLD [Disconnected]  NEW [Scanning]  port []
+2023-09-08 11:31:11,100 [BaseCreateLabDeviceConnectivityManager.executorService pool-1-thread-1] DEBUG: edu.cmu.ri.createlab.terk.robot.finch.DefaultFinchController: DefaultFinchController.create(): creating HID device for vendor ID [2354] and product ID [1111]
+2023-09-08 11:31:11,104 [BaseCreateLabDeviceConnectivityManager.executorService pool-1-thread-1] DEBUG: edu.cmu.ri.createlab.terk.robot.finch.DefaultFinchController: DefaultFinchController.create(): attempting connection...
+2023-09-08 11:31:11,347 [BaseCreateLabDeviceConnectivityManager.executorService pool-1-thread-1] DEBUG: edu.cmu.ri.createlab.usb.hid.windows.WindowsHIDDevice: WindowsHIDDevice.disconnect(): disconnected successfully
+2023-09-08 11:31:11,354 [BaseCreateLabDeviceConnectivityManager.executorService pool-1-thread-1] DEBUG: edu.cmu.ri.createlab.usb.hid.windows.WindowsHIDDevice: WindowsHIDDevice.connect(): connection successful
+2023-09-08 11:31:11,371 [BaseCreateLabDeviceConnectivityManager.executorService pool-1-thread-1] DEBUG: edu.cmu.ri.createlab.device.connectivity.BaseCreateLabDeviceConnectivityManager: CreateLabDeviceConnectivityManagerImpl$DeviceScanner.run(): connection established!
+2023-09-08 11:31:11,371 [BaseCreateLabDeviceConnectivityManager.executorService pool-1-thread-1] DEBUG: edu.cmu.ri.createlab.terk.robot.finch.LocalFinchConnectionStrategy: LocalFinchConnectionStrategy.handleConnectionStateChange(): OLD [Scanning]  NEW [Connected]  port [\\?\hid#vid_2354&pid_1111#6&3752f9b6&0&0000#{4d1e55b2-f16f-11cf-88cb-001111000030}]
+2023-09-08 11:31:11,377 [main] DEBUG: edu.cmu.ri.createlab.terk.robot.finch.services.FinchServiceManager: FinchServiceManager.loadService() needs to load the [::TeRK::AudioController] service
+2023-09-08 11:31:11,377 [main] DEBUG: edu.cmu.ri.createlab.terk.robot.finch.services.FinchServiceFactory: FinchServiceFactory.createService(::TeRK::AudioController)
+2023-09-08 11:31:11,378 [main] DEBUG: edu.cmu.ri.createlab.terk.properties.BasicPropertyManager: ServantPropertyManager.setReadOnlyProperty(device.count,1)
+2023-09-08 11:31:11,378 [main] DEBUG: edu.cmu.ri.createlab.terk.properties.BasicPropertyManager: ServantPropertyManager.setReadOnlyProperty(::TeRK::AudioController::min-amplitude,0)
+2023-09-08 11:31:11,378 [main] DEBUG: edu.cmu.ri.createlab.terk.properties.BasicPropertyManager: ServantPropertyManager.setReadOnlyProperty(::TeRK::AudioController::max-amplitude,10)
+2023-09-08 11:31:11,378 [main] DEBUG: edu.cmu.ri.createlab.terk.properties.BasicPropertyManager: ServantPropertyManager.setReadOnlyProperty(::TeRK::AudioController::min-duration,0)
+2023-09-08 11:31:11,378 [main] DEBUG: edu.cmu.ri.createlab.terk.properties.BasicPropertyManager: ServantPropertyManager.setReadOnlyProperty(::TeRK::AudioController::max-duration,2147483647)
+2023-09-08 11:31:11,378 [main] DEBUG: edu.cmu.ri.createlab.terk.properties.BasicPropertyManager: ServantPropertyManager.setReadOnlyProperty(::TeRK::AudioController::min-frequency,0)
+2023-09-08 11:31:11,378 [main] DEBUG: edu.cmu.ri.createlab.terk.properties.BasicPropertyManager: ServantPropertyManager.setReadOnlyProperty(::TeRK::AudioController::max-frequency,2147483647)
+2023-09-08 11:31:11,380 [main] DEBUG: edu.cmu.ri.createlab.audio.AudioHelper: AudioHelper.playTone(261,10,1000)
+2023-09-08 11:31:12,629 [main] DEBUG: edu.cmu.ri.createlab.audio.AudioHelper: AudioHelper.playTone(294,10,1000)
+2023-09-08 11:31:13,677 [main] DEBUG: edu.cmu.ri.createlab.audio.AudioHelper: AudioHelper.playTone(330,10,1000)
+2023-09-08 11:31:14,719 [main] DEBUG: edu.cmu.ri.createlab.audio.AudioHelper: AudioHelper.playTone(349,10,1000)
+2023-09-08 11:31:15,766 [main] DEBUG: edu.cmu.ri.createlab.audio.AudioHelper: AudioHelper.playTone(392,10,1000)
+2023-09-08 11:31:16,790 [main] DEBUG: edu.cmu.ri.createlab.audio.AudioHelper: AudioHelper.playTone(440,10,1000)
+2023-09-08 11:31:17,824 [main] DEBUG: edu.cmu.ri.createlab.audio.AudioHelper: AudioHelper.playTone(494,10,1000)
+2023-09-08 11:31:18,867 [main] DEBUG: edu.cmu.ri.createlab.audio.AudioHelper: AudioHelper.playTone(523,10,1000)
+2023-09-08 11:31:19,932 [main] DEBUG: edu.cmu.ri.createlab.audio.AudioHelper: AudioHelper.playTone(261,10,1000)
+2023-09-08 11:31:20,973 [main] DEBUG: edu.cmu.ri.createlab.audio.AudioHelper: AudioHelper.playTone(330,10,1000)
+2023-09-08 11:31:22,013 [main] DEBUG: edu.cmu.ri.createlab.audio.AudioHelper: AudioHelper.playTone(392,10,1000)
+2023-09-08 11:31:23,049 [main] DEBUG: edu.cmu.ri.createlab.audio.AudioHelper: AudioHelper.playTone(440,10,1000)
+2023-09-08 11:31:24,084 [main] DEBUG: edu.cmu.ri.createlab.audio.AudioHelper: AudioHelper.playTone(349,10,1000)
+2023-09-08 11:31:25,142 [main] DEBUG: edu.cmu.ri.createlab.audio.AudioHelper: AudioHelper.playTone(294,10,1000)
+2023-09-08 11:31:26,178 [main] DEBUG: edu.cmu.ri.createlab.audio.AudioHelper: AudioHelper.playTone(247,10,1000)
+2023-09-08 11:31:27,214 [main] DEBUG: edu.cmu.ri.createlab.audio.AudioHelper: AudioHelper.playTone(392,10,1000)
+2023-09-08 11:31:28,238 [main] DEBUG: edu.cmu.ri.createlab.audio.AudioHelper: AudioHelper.playTone(261,10,1000)
+2023-09-08 11:31:29,273 [main] DEBUG: edu.cmu.ri.createlab.audio.AudioHelper: AudioHelper.playTone(659,10,500)
+2023-09-08 11:31:29,838 [main] DEBUG: edu.cmu.ri.createlab.audio.AudioHelper: AudioHelper.playTone(622,10,500)
+2023-09-08 11:31:30,417 [main] DEBUG: edu.cmu.ri.createlab.audio.AudioHelper: AudioHelper.playTone(659,10,500)
+2023-09-08 11:31:30,992 [main] DEBUG: edu.cmu.ri.createlab.audio.AudioHelper: AudioHelper.playTone(622,10,500)
+2023-09-08 11:31:31,587 [main] DEBUG: edu.cmu.ri.createlab.audio.AudioHelper: AudioHelper.playTone(659,10,500)
+2023-09-08 11:31:32,163 [main] DEBUG: edu.cmu.ri.createlab.audio.AudioHelper: AudioHelper.playTone(494,10,500)
+2023-09-08 11:31:32,727 [main] DEBUG: edu.cmu.ri.createlab.audio.AudioHelper: AudioHelper.playTone(587,10,500)
+2023-09-08 11:31:33,294 [main] DEBUG: edu.cmu.ri.createlab.audio.AudioHelper: AudioHelper.playTone(523,10,500)
+2023-09-08 11:31:33,854 [main] DEBUG: edu.cmu.ri.createlab.audio.AudioHelper: AudioHelper.playTone(440,10,1000)
+2023-09-08 11:31:34,889 [main] DEBUG: edu.cmu.ri.createlab.audio.AudioHelper: AudioHelper.playTone(587,10,500)
+2023-09-08 11:31:35,466 [main] DEBUG: edu.cmu.ri.createlab.audio.AudioHelper: AudioHelper.playTone(659,10,500)
+2023-09-08 11:31:36,051 [main] DEBUG: edu.cmu.ri.createlab.audio.AudioHelper: AudioHelper.playTone(587,10,500)
+2023-09-08 11:31:36,639 [main] DEBUG: edu.cmu.ri.createlab.audio.AudioHelper: AudioHelper.playTone(494,10,500)
+2023-09-08 11:31:37,213 [main] DEBUG: edu.cmu.ri.createlab.audio.AudioHelper: AudioHelper.playTone(554,10,500)
+2023-09-08 11:31:37,806 [main] DEBUG: edu.cmu.ri.createlab.audio.AudioHelper: AudioHelper.playTone(466,10,500)
+2023-09-08 11:31:38,384 [main] DEBUG: edu.cmu.ri.createlab.audio.AudioHelper: AudioHelper.playTone(523,10,500)
+2023-09-08 11:31:38,961 [main] DEBUG: edu.cmu.ri.createlab.audio.AudioHelper: AudioHelper.playTone(440,10,500)
+2023-09-08 11:31:39,526 [main] DEBUG: edu.cmu.ri.createlab.audio.AudioHelper: AudioHelper.playTone(587,10,500)
+2023-09-08 11:31:40,111 [main] DEBUG: edu.cmu.ri.createlab.audio.AudioHelper: AudioHelper.playTone(554,10,500)
+2023-09-08 11:31:40,700 [main] DEBUG: edu.cmu.ri.createlab.audio.AudioHelper: AudioHelper.playTone(587,10,500)
+2023-09-08 11:31:41,280 [main] DEBUG: edu.cmu.ri.createlab.audio.AudioHelper: AudioHelper.playTone(494,10,500)
+2023-09-08 11:31:41,855 [main] DEBUG: edu.cmu.ri.createlab.audio.AudioHelper: AudioHelper.playTone(554,10,500)
+2023-09-08 11:31:42,434 [main] DEBUG: edu.cmu.ri.createlab.audio.AudioHelper: AudioHelper.playTone(466,10,500)
+2023-09-08 11:31:42,996 [main] DEBUG: edu.cmu.ri.createlab.audio.AudioHelper: AudioHelper.playTone(554,10,500)
+2023-09-08 11:31:43,582 [main] DEBUG: edu.cmu.ri.createlab.audio.AudioHelper: AudioHelper.playTone(440,10,500)
+2023-09-08 11:31:44,163 [main] DEBUG: edu.cmu.ri.createlab.audio.AudioHelper: AudioHelper.playTone(784,10,500)
+2023-09-08 11:31:44,742 [main] DEBUG: edu.cmu.ri.createlab.audio.AudioHelper: AudioHelper.playTone(740,10,500)
+2023-09-08 11:31:45,319 [main] DEBUG: edu.cmu.ri.createlab.audio.AudioHelper: AudioHelper.playTone(784,10,500)
+2023-09-08 11:31:45,906 [main] DEBUG: edu.cmu.ri.createlab.audio.AudioHelper: AudioHelper.playTone(659,10,500)
+2023-09-08 11:31:46,473 [main] DEBUG: edu.cmu.ri.createlab.audio.AudioHelper: AudioHelper.playTone(740,10,500)
+2023-09-08 11:31:47,050 [main] DEBUG: edu.cmu.ri.createlab.audio.AudioHelper: AudioHelper.playTone(622,10,500)
+2023-09-08 11:31:47,612 [main] DEBUG: edu.cmu.ri.createlab.audio.AudioHelper: AudioHelper.playTone(698,10,500)
+2023-09-08 11:31:48,176 [main] DEBUG: edu.cmu.ri.createlab.audio.AudioHelper: AudioHelper.playTone(587,10,500)
+2023-09-08 11:31:48,772 [main] DEBUG: edu.cmu.ri.createlab.audio.AudioHelper: AudioHelper.playTone(784,10,500)
+2023-09-08 11:31:49,359 [main] DEBUG: edu.cmu.ri.createlab.audio.AudioHelper: AudioHelper.playTone(740,10,500)
+2023-09-08 11:31:49,924 [main] DEBUG: edu.cmu.ri.createlab.audio.AudioHelper: AudioHelper.playTone(784,10,500)
+2023-09-08 11:31:50,498 [main] DEBUG: edu.cmu.ri.createlab.audio.AudioHelper: AudioHelper.playTone(622,10,500)
+2023-09-08 11:31:51,094 [main] DEBUG: edu.cmu.ri.createlab.audio.AudioHelper: AudioHelper.playTone(740,10,500)
+2023-09-08 11:31:51,665 [main] DEBUG: edu.cmu.ri.createlab.audio.AudioHelper: AudioHelper.playTone(587,10,500)
+2023-09-08 11:31:52,263 [main] DEBUG: edu.cmu.ri.createlab.audio.AudioHelper: AudioHelper.playTone(440,10,500)
+2023-09-08 11:31:52,831 [main] DEBUG: edu.cmu.ri.createlab.audio.AudioHelper: AudioHelper.playTone(440,10,500)
+2023-09-08 11:31:53,416 [main] DEBUG: edu.cmu.ri.createlab.audio.AudioHelper: AudioHelper.playTone(740,10,750)
+2023-09-08 11:31:54,269 [main] DEBUG: edu.cmu.ri.createlab.audio.AudioHelper: AudioHelper.playTone(440,10,1000)
+2023-09-08 11:31:55,304 [main] DEBUG: edu.cmu.ri.createlab.audio.AudioHelper: AudioHelper.playTone(587,10,2000)
+2023-09-08 11:31:57,369 [main] DEBUG: edu.cmu.ri.createlab.audio.AudioHelper: AudioHelper.playTone(659,10,1000)
+2023-09-08 11:31:58,424 [main] DEBUG: edu.cmu.ri.createlab.audio.AudioHelper: AudioHelper.playTone(698,10,500)
+2023-09-08 11:31:59,001 [main] DEBUG: edu.cmu.ri.createlab.audio.AudioHelper: AudioHelper.playTone(783,10,500)
+2023-09-08 11:31:59,580 [main] DEBUG: edu.cmu.ri.createlab.audio.AudioHelper: AudioHelper.playTone(659,10,2000)
+2023-09-08 11:32:01,651 [main] DEBUG: edu.cmu.ri.createlab.audio.AudioHelper: AudioHelper.playTone(440,10,1000)
+2023-09-08 11:32:02,715 [main] DEBUG: edu.cmu.ri.createlab.audio.AudioHelper: AudioHelper.playTone(440,10,500)
+2023-09-08 11:32:03,292 [main] DEBUG: edu.cmu.ri.createlab.audio.AudioHelper: AudioHelper.playTone(587,10,2000)
+2023-09-08 11:32:05,335 [main] DEBUG: edu.cmu.ri.createlab.audio.AudioHelper: AudioHelper.playTone(659,10,500)
+2023-09-08 11:32:05,919 [main] DEBUG: edu.cmu.ri.createlab.audio.AudioHelper: AudioHelper.playTone(698,10,500)
+2023-09-08 11:32:06,506 [main] DEBUG: edu.cmu.ri.createlab.audio.AudioHelper: AudioHelper.playTone(440,10,500)
+2023-09-08 11:32:07,084 [main] DEBUG: edu.cmu.ri.createlab.audio.AudioHelper: AudioHelper.playTone(698,10,500)
+2023-09-08 11:32:07,663 [main] DEBUG: edu.cmu.ri.createlab.audio.AudioHelper: AudioHelper.playTone(587,10,500)
+2023-09-08 11:32:08,239 [main] DEBUG: edu.cmu.ri.createlab.audio.AudioHelper: AudioHelper.playTone(880,10,500)
+2023-09-08 11:32:08,813 [main] DEBUG: edu.cmu.ri.createlab.audio.AudioHelper: AudioHelper.playTone(783,10,2000)
+2023-09-08 11:32:10,867 [main] DEBUG: edu.cmu.ri.createlab.audio.AudioHelper: AudioHelper.playTone(440,10,1000)
+2023-09-08 11:32:11,914 [main] DEBUG: edu.cmu.ri.createlab.audio.AudioHelper: AudioHelper.playTone(587,10,1000)
+2023-09-08 11:32:12,939 [main] DEBUG: edu.cmu.ri.createlab.audio.AudioHelper: AudioHelper.playTone(659,10,500)
+2023-09-08 11:32:13,503 [main] DEBUG: edu.cmu.ri.createlab.audio.AudioHelper: AudioHelper.playTone(698,10,500)
+2023-09-08 11:32:14,065 [main] DEBUG: edu.cmu.ri.createlab.audio.AudioHelper: AudioHelper.playTone(587,10,500)
+2023-09-08 11:32:14,630 [main] DEBUG: edu.cmu.ri.createlab.audio.AudioHelper: AudioHelper.playTone(880,10,1000)
+2023-09-08 11:32:15,658 [main] DEBUG: edu.cmu.ri.createlab.audio.AudioHelper: AudioHelper.playTone(698,10,500)
+2023-09-08 11:32:16,223 [main] DEBUG: edu.cmu.ri.createlab.audio.AudioHelper: AudioHelper.playTone(1174,10,2000)
+2023-09-08 11:32:18,290 [main] DEBUG: edu.cmu.ri.createlab.audio.AudioHelper: AudioHelper.playTone(587,10,1000)
+2023-09-08 11:32:19,331 [main] DEBUG: edu.cmu.ri.createlab.audio.AudioHelper: AudioHelper.playTone(698,10,750)
+2023-09-08 11:32:20,178 [main] DEBUG: edu.cmu.ri.createlab.audio.AudioHelper: AudioHelper.playTone(659,10,750)
+2023-09-08 11:32:21,035 [main] DEBUG: edu.cmu.ri.createlab.audio.AudioHelper: AudioHelper.playTone(587,10,750)
+2023-09-08 11:32:21,900 [main] DEBUG: edu.cmu.ri.createlab.audio.AudioHelper: AudioHelper.playTone(783,10,1000)
+2023-09-08 11:32:22,925 [main] DEBUG: edu.cmu.ri.createlab.audio.AudioHelper: AudioHelper.playTone(698,10,500)
+2023-09-08 11:32:23,489 [main] DEBUG: edu.cmu.ri.createlab.audio.AudioHelper: AudioHelper.playTone(587,10,500)
+2023-09-08 11:32:24,064 [main] DEBUG: edu.cmu.ri.createlab.audio.AudioHelper: AudioHelper.playTone(440,10,1000)
+2023-09-08 11:32:25,110 [main] DEBUG: edu.cmu.ri.createlab.audio.AudioHelper: AudioHelper.playTone(440,10,500)
+2023-09-08 11:32:25,683 [main] DEBUG: edu.cmu.ri.createlab.audio.AudioHelper: AudioHelper.playTone(440,10,1500)
+2023-09-08 11:32:27,290 [main] DEBUG: edu.cmu.ri.createlab.audio.AudioHelper: AudioHelper.playTone(587,10,2000)
+2023-09-08 11:32:29,351 [main] DEBUG: edu.cmu.ri.createlab.terk.application.TerkApplication: TerkApplication.shutdown()
+2023-09-08 11:32:29,351 [main] DEBUG: edu.cmu.ri.createlab.terk.application.TerkApplication: TerkApplication$shutdownRunnable.run()
+2023-09-08 11:32:29,351 [main] DEBUG: edu.cmu.ri.createlab.terk.robot.finch.LocalFinchConnectionStrategy: LocalFinchConnectionStrategy.prepareForShutdown()
+2023-09-08 11:32:29,351 [main] DEBUG: edu.cmu.ri.createlab.terk.robot.finch.LocalFinchConnectionStrategy: LocalFinchConnectionStrategy.disconnect()
+2023-09-08 11:32:29,351 [main] DEBUG: edu.cmu.ri.createlab.device.connectivity.BaseCreateLabDeviceConnectivityManager: BaseCreateLabDeviceConnectivityManager.disconnect()
+2023-09-08 11:32:29,351 [main] DEBUG: edu.cmu.ri.createlab.terk.robot.finch.DefaultFinchController: DefaultFinchController.disconnect(): Shutting down finch pinger...
+2023-09-08 11:32:29,352 [main] DEBUG: edu.cmu.ri.createlab.terk.robot.finch.DefaultFinchController: DefaultFinchController.disconnect(): Successfully shut down finch pinger.
+2023-09-08 11:32:29,352 [main] DEBUG: edu.cmu.ri.createlab.terk.robot.finch.DefaultFinchController: DefaultFinchController.disconnect(): Now attempting to send the disconnect command to the finch
+2023-09-08 11:32:29,356 [main] DEBUG: edu.cmu.ri.createlab.terk.robot.finch.DefaultFinchController: DefaultFinchController.disconnect(): Successfully disconnected from the finch.
+2023-09-08 11:32:29,356 [main] DEBUG: edu.cmu.ri.createlab.terk.robot.finch.DefaultFinchController: DefaultFinchController.disconnect(): Now shutting down the HIDCommandExecutionQueue...
+2023-09-08 11:32:29,356 [main] DEBUG: edu.cmu.ri.createlab.usb.hid.HIDCommandExecutionQueue: HIDCommandExecutionQueue.shutdown(): Shutting down the HID device command execution queue
+2023-09-08 11:32:29,356 [main] DEBUG: edu.cmu.ri.createlab.usb.hid.HIDCommandExecutionQueue: HIDCommandExecutionQueue.shutdown(): Unexecuted tasks: 0
+2023-09-08 11:32:29,356 [main] DEBUG: edu.cmu.ri.createlab.usb.hid.HIDCommandExecutionQueue: HIDCommandExecutionQueue.shutdown(): Waiting for the HID device command execution queue to shutdown.
+2023-09-08 11:32:29,356 [main] DEBUG: edu.cmu.ri.createlab.usb.hid.HIDCommandExecutionQueue: HIDCommandExecutionQueue.shutdown(): HID device command execution queue successfully shutdown
+2023-09-08 11:32:29,357 [main] DEBUG: edu.cmu.ri.createlab.usb.hid.HIDCommandExecutionQueue: HIDCommandExecutionQueue.shutdown(): Now attempting to disconnect from the HID device...
+2023-09-08 11:32:29,357 [main] ERROR: edu.cmu.ri.createlab.usb.hid.windows.WinError: WinError.findById(): Failed to find error code [14007], returning UNKNOWN.
+2023-09-08 11:32:29,357 [main] ERROR: edu.cmu.ri.createlab.usb.hid.windows.WindowsHIDDevice: WindowsHIDDevice.disconnect(): Failed to disconnect.  Return was [true] and last error was [WinError{id=-1, name='Unknown: unknown status'}]
+2023-09-08 11:32:29,357 [main] DEBUG: edu.cmu.ri.createlab.usb.hid.HIDCommandExecutionQueue: HIDCommandExecutionQueue.shutdown(): Failed to disconnect from the HID device.
+2023-09-08 11:32:29,357 [main] DEBUG: edu.cmu.ri.createlab.terk.robot.finch.LocalFinchConnectionStrategy: LocalFinchConnectionStrategy.handleConnectionStateChange(): OLD [Connected]  NEW [Disconnected]  port []
